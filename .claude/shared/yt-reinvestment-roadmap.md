@@ -2,8 +2,9 @@
 
 > Owner: Alfred
 > Created: 2026-05-30
+> Updated: 2026-05-30 (council review — ElevenLabs moved to Tier 0 mandatory)
 > Status: Pre-revenue (activate at Tier 1 trigger)
-> Rule: Never reinvest before the trigger income is stable for 2 consecutive months.
+> Rule: Never reinvest before the trigger income is stable for 2 consecutive months. Exception: ElevenLabs Starter is mandatory at launch — not revenue-gated.
 
 ---
 
@@ -21,15 +22,25 @@ The free stack gets you to monetisation and through the first $500/month. After 
 
 ---
 
-## Tier 0 — Free Stack (Current)
+## Tier 0 — Launch Stack (Start Day 1)
 
 **Income:** $0
-**Tool spend:** $0/month
-**Status:** Active now
+**Tool spend:** ~$11 AUD/month (ElevenLabs Starter — mandatory, not revenue-gated)
+**Status:** Activate before posting the first video
+
+The free stack is not sufficient for consistent posting. ElevenLabs' 10K character free tier covers one long-form script per month. At 4–6 videos/week, this breaks the system before it starts. ElevenLabs Starter is the only mandatory pre-revenue spend.
+
+### Mandatory at launch
+
+**ElevenLabs Starter — ~$7 USD/month (~$11 AUD)**
+Upgrades from 10,000 to 30,000 characters/month. Adds commercial licence. Covers 3–4 full long-form scripts per month, plus 20+ Shorts.
+- The free tier bottleneck was identified as a critical system failure by council review — it breaks the posting cadence before any revenue is earned.
+- At 4–6 videos/week faceless: upgrade to Creator tier ($22 USD/month, ~$34 AUD, 100K chars) at Tier 2.
+- **Activate this before the first video is produced.** Do not wait for revenue.
 
 | Tool | Purpose | Cost |
 |------|---------|------|
-| ElevenLabs free tier | AI voiceover (10,000 chars/month) | Free |
+| ElevenLabs Starter | AI voiceover — 30K chars/month + commercial licence | ~$11 AUD/month |
 | Pixabay | Stock footage + images | Free |
 | CapCut | Video editing | Free |
 | Canva free tier | Thumbnail design | Free |
@@ -38,13 +49,13 @@ The free stack gets you to monetisation and through the first $500/month. After 
 | duckduckgo + open-websearch MCP | Research | Free |
 | Google Gemini video | AI clip generation (3/day) | Free |
 | YouTubeToTranscript.com | Bulk transcript extraction | Free |
+| TTSMaker.com | Overflow voiceover (free, unlimited) — supplement ElevenLabs for Shorts | Free |
 
-**Bottlenecks at this tier:**
-- ElevenLabs 10K char limit = ~1 video/month on paid tier quality. Workaround: use free tier with multiple accounts or split long scripts.
-- Pixabay footage hunting is slow — VA has to search manually per clip.
-- No real-time competitor analytics — Outlier Hunter scrapes manually.
-- Thumbnail generation is brief-based (VA executes in Canva) — not automated.
-- Performance Loop requires manually pasting analytics — no direct API pull.
+**Remaining bottlenecks at this tier:**
+- Pixabay footage hunting is slow — VA has to search manually per clip (fixed at Tier 2 with Storyblocks).
+- No real-time competitor analytics — Outlier Hunter scrapes manually (fixed at Tier 3 with YouTube Data API).
+- Thumbnail generation is brief-based (VA executes in Canva) — not automated (fixed at Tier 4 with Midjourney).
+- Performance Loop requires manually pasting analytics (Quick Loop mode reduces friction; direct API pull at Tier 3).
 
 ---
 
@@ -67,14 +78,8 @@ Unlocks: brand kit (auto-apply channel colours to every thumbnail), background r
 - Brand kit eliminates the step where VA has to manually apply colours each time.
 - Activates in: yt-thumbnail-gen, yt-va-package (Canva brief becomes faster to execute)
 
-**3. ElevenLabs Starter — ~$7 USD/month (~$11 AUD)**
-Upgrades from 10,000 to 30,000 characters/month. Adds commercial licence (important once the channel earns money). Unlocks more voice cloning slots.
-- At 4–6 videos/week, the free tier runs out by week 2. The Starter tier covers 4–6 full scripts per month at narration length.
-- If posting 4–6 videos/week faceless: upgrade to Creator tier ($22 USD/month, 100K chars) when Tier 2 is reached.
-- Activates in: yt-va-package (voiceover brief, Section 1)
-
-**Tier 1 total spend: ~$34–45 AUD/month**
-**Tier 1 remaining budget for savings/reinvestment: ~$5–30/month**
+**Tier 1 total spend: ~$23–38 AUD/month** (ElevenLabs already running from Tier 0)
+**Tier 1 remaining budget for savings/reinvestment: ~$12–37/month**
 
 ### Alfred agent upgrades unlocked at Tier 1
 
@@ -271,9 +276,10 @@ Before approving any new paid tool, run this check:
 
 | Tool | Monthly Cost (AUD) | Tier | Primary Benefit |
 |------|--------------------|----|-----------------|
+| ElevenLabs Starter | ~$11 | 0 (mandatory) | 30K chars + commercial licence — required from day 1 |
 | Keywords Everywhere | ~$1 (annual) | 1 | Real search volume data |
 | Canva Pro | ~$23 | 1 | Brand kit + background remover |
-| ElevenLabs Creator | ~$52 | 3 | 100K chars + custom voice |
+| ElevenLabs Creator | ~$34 | 2 | 100K chars + custom voice (upgrade from Starter) |
 | Storyblocks All-Access | ~$34 | 2 | Unlimited stock footage |
 | Epidemic Sound | ~$31 | 2 | Copyright-safe music |
 | VidIQ Basic | ~$15 | 2 | Competitor keyword + velocity data |

@@ -30,9 +30,11 @@ Run a complete, high-quality YouTube channel operation with 95% automation. Ever
 | **Thumbnail Gen** | `yt-thumbnail-gen` | Designs and generates thumbnails via Pollinations (free) | "make me a thumbnail" |
 | **Monetization Strategist** | `yt-monetization-strategist` | Full monetization roadmap — YPP, affiliates, sponsors, products | "how do I monetize my channel" |
 | **Content Calendar** | `yt-content-calendar` | 30/90-day content pipeline with topics, deadlines, and upload schedule | "content calendar" or "what should I post" |
-| **Outlier Hunter** | `yt-outlier-hunter` | Automated viral topic discovery — Attack Score formula scans competitors weekly | "find topics", "what should I make next", "find viral videos" |
+| **Outlier Hunter** | `yt-outlier-hunter` | Automated viral topic discovery — Attack Score + Winnable Score scans competitors weekly | "find topics", "what should I make next", "find viral videos" |
 | **VA Package** | `yt-va-package` | Complete 5-section VA production brief — voiceover, b-roll, Canva, CapCut, upload | "create VA brief", "production brief", "send to VA" |
-| **Performance Loop** | `yt-performance-loop` | Weekly analytics review — scores videos, finds patterns, updates content calendar | "performance review", "what's working", "check my analytics" |
+| **Performance Loop** | `yt-performance-loop` | Weekly analytics review (Full or Quick Loop) — scores videos, finds patterns, updates calendar | "performance review", "what's working", "check my analytics" |
+| **Cold Start** | `yt-cold-start` | 90-day Shorts-first authority strategy — breaks YouTube's new-channel suppression | "starting a new channel", "getting zero views", "cold start" |
+| **Community Manager** | `yt-community-manager` | Weekly comment management — pinned comments, 6-hour reply window, Community tab | "manage comments", "community engagement", "reply to comments" |
 
 ---
 
@@ -77,6 +79,16 @@ All agents run exclusively on free tools:
 ## Standard Workflow (New Channel)
 
 ```
+PRE-LAUNCH (before first video):
+
+Step 0: /yt-cold-start
+  → Build 90-day Shorts warm-up plan. Channel setup checklist. Shorts content queue.
+  → Activate ElevenLabs Starter (~$11 AUD/month) — mandatory before first video.
+  → Run Shorts-only for first 30 days. No long-form until 100 subscribers.
+  Output: yt-cold-start-plan.md
+
+---
+
 CHANNEL SETUP (one-time):
 
 Step 1: /yt-niche-scout
@@ -119,10 +131,15 @@ Step 10: VA executes the brief
 WEEKLY MAINTENANCE:
 
 Step 11 (every 7 days): /yt-performance-loop
-  → Paste YouTube Studio analytics. Scores every video. Identifies winning patterns.
+  → Full Loop (15 min) or Quick Loop (5 min). Scores every video. Identifies winning patterns.
   → Generates Next 7 Days action plan. Updates content calendar automatically.
 
-Step 12 (monthly): /yt-competitor-analyst on 2 new channels
+Step 12 (every Monday): /yt-community-manager
+  → Pinned comment for new videos. Reply templates for the week's comments.
+  → Comment prompt for next script. Community tab post draft (500+ subs).
+  → Viewer-requested topics fed back to content calendar.
+
+Step 13 (monthly): /yt-competitor-analyst on 2 new channels
   → Keep competitor intelligence current. Update strategy.
 ```
 
@@ -184,6 +201,6 @@ Then the standard workflow above applies.
 
 ---
 
-## Installed: 2026-05-30 | Updated: 2026-05-30
+## Installed: 2026-05-30 | Updated: 2026-05-30 (council review)
 
-Approved by Alfred. 11 agents operational. Zero-cost tool stack confirmed. Evergreen-first principle applied across all agents.
+Approved by Alfred. 13 agents operational. Zero-cost tool stack confirmed (ElevenLabs Starter ~$11 AUD/month mandatory from launch). Evergreen-first principle applied across all agents. Council review gaps resolved: cold-start authority building, community engagement, competition filter, Quick Loop mode, ElevenLabs character math.

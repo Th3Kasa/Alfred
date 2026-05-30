@@ -64,6 +64,8 @@ For every video collected, calculate the **Attack Score**:
 Attack Score = (Views ÷ Channel Subscribers) × Recency Multiplier × Repetition Bonus
 ```
 
+> **Note on Attack Score and channel authority:** The Attack Score measures demand — how much the algorithm is pushing a topic right now. It does not measure winnability — whether a zero-authority channel can rank for it. A topic with a score of 8.0 dominated by 500K-sub channels is harder to win than a topic with a score of 3.0 where all top-ranking videos are from channels under 20K subs. Always apply the Competition Filter in Step 4b before finalising the attack list.
+
 **Recency Multiplier:**
 | Days since publish | Multiplier |
 |---|---|
@@ -88,6 +90,44 @@ Attack Score = (Views ÷ Channel Subscribers) × Recency Multiplier × Repetitio
 - Score 2.0–5.0: Strong — schedule within 2 weeks
 - Score 0.5–2.0: Average — add to backlog
 - Score < 0.5: Skip — not worth the production time
+
+## Step 4b. Apply the Competition Filter
+
+The Attack Score tells you what topics have demand. The Competition Filter tells you which of those topics a new channel can actually win.
+
+For every topic scoring above 2.0 in the Attack Score, search YouTube directly for the topic keyword and assess the top 5 ranking videos:
+
+**Search:** `"[topic keyword]" site:youtube.com` or use agent-browser to search YouTube directly.
+
+For each of the top 5 results, record:
+- Channel subscriber count (approximate)
+- Video age (months/years old)
+- Video view count
+
+Then calculate the **Competition Rating:**
+
+| Condition | Competition Rating |
+|---|---|
+| 3+ of the top 5 videos are from channels under 50K subs | Weak — high winnability |
+| Mix of large and small channels in top 5 | Moderate — achievable with strong content |
+| 3+ of the top 5 videos are from channels over 100K subs | Strong — very hard to rank against |
+
+**Age bonus:** If the top-ranking video is more than 18 months old with no recent challenger, add an "ageing gap" note — this means the algorithm is looking for fresh content on this topic and may favour a newer, high-quality video.
+
+**Winnable Score:**
+```
+Winnable Score = Attack Score × Competition Multiplier
+
+Competition Multipliers:
+- Weak competition:     × 1.5
+- Moderate competition: × 1.0
+- Strong competition:   × 0.5
+```
+
+**Priority rule:** Always rank topics by Winnable Score, not raw Attack Score. A topic with Attack Score 6.0 and strong competition (Winnable Score 3.0) is lower priority than a topic with Attack Score 3.0 and weak competition (Winnable Score 4.5).
+
+**When to override the filter:**
+If the channel has 10,000+ subscribers and 50+ videos, the Competition Filter multipliers can be relaxed — the channel now has enough authority to compete with mid-size channels. Until then, always apply the filter.
 
 ## Step 5. Extract the topic from the title
 
@@ -115,11 +155,11 @@ For each top-scoring video:
 
 ## Priority 1 — Attack This Week
 
-| # | Competitor Title | Our Angle | Score | Why |
-|---|---|---|---|---|
-| 1 | [exact title] | [our execution] | X.X | [1 sentence] |
-| 2 | [exact title] | [our execution] | X.X | [1 sentence] |
-| 3 | [exact title] | [our execution] | X.X | [1 sentence] |
+| # | Competitor Title | Our Angle | Attack Score | Winnable Score | Competition | Why |
+|---|---|---|---|---|---|---|
+| 1 | [exact title] | [our execution] | X.X | X.X | Weak/Moderate/Strong | [1 sentence] |
+| 2 | [exact title] | [our execution] | X.X | X.X | Weak/Moderate/Strong | [1 sentence] |
+| 3 | [exact title] | [our execution] | X.X | X.X | Weak/Moderate/Strong | [1 sentence] |
 
 ## Priority 2 — Schedule Within 2 Weeks
 

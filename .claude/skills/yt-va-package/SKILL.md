@@ -32,8 +32,42 @@ Also check:
 
 The voiceover is the timeline foundation of the video. This brief formats the script so a VA can paste it into ElevenLabs and produce the audio without any editing judgment.
 
+**Character budget check (run before generating the brief):**
+
+Count the script word count. Multiply by 6 to estimate character count (average word = ~6 characters including spaces).
+
+| Script words | Est. characters | Free tier status |
+|---|---|---|
+| Under 1,500 words | Under 9,000 chars | ✓ Safe on free tier (10K limit) |
+| 1,500–2,000 words | 9,000–12,000 chars | ⚠ May exceed free tier |
+| Over 2,000 words | Over 12,000 chars | ✗ Exceeds free tier — use workaround below |
+
+**If the script exceeds the free tier (most long-form scripts will):**
+
+Choose one workaround — list in order of preference:
+
+**Workaround 1 — ElevenLabs Starter (Recommended — ~$11 AUD/month)**
+30,000 characters/month + commercial licence. Covers 3–4 full long-form scripts per month. This is the single best first investment for the channel — prioritise before any other paid tool. At the first $50 of channel revenue, activate this.
+
+**Workaround 2 — Priority queue (free)**
+Generate only the high-value sections in ElevenLabs (Attention hook + all Explore Twists + X-change). Generate the lower-intensity narration sections (Proof section, transitions between Explore points) in TTSMaker.com (free, unlimited, 100+ voices). Splice the two audio sources in CapCut. Match the voice as closely as possible by selecting the same gender/accent profile in TTSMaker.
+
+**Workaround 3 — TTSMaker.com as primary (free, unlimited)**
+Use TTSMaker.com for the entire script. Voice quality is slightly below ElevenLabs but has no character limit. Best voices: "Neural" voices with similar tone to your ElevenLabs selection. This is acceptable for the first 10 videos while revenue builds.
+
+**Workaround 4 — Batch across multiple free accounts (free)**
+ElevenLabs allows one free account per email address. Generate the first half of the script on account A, the second half on account B. Splice in CapCut. Ensure the same voice is selected on both accounts for consistency.
+
+Include the chosen workaround in Section 1 of the brief so the VA knows exactly what to do.
+
 ```markdown
 # BRIEF SECTION 1: VOICEOVER
+
+## Character Budget
+- Script word count: [X words]
+- Estimated characters: [X × 6 = Y chars]
+- Free tier status: [Safe / May exceed / Exceeds]
+- Workaround if needed: [Workaround 1 / 2 / 3 / 4 — with specific instructions]
 
 ## ElevenLabs Settings
 - Voice: [AI voice name — choose one suited to the niche tone]

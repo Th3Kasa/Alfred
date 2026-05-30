@@ -17,14 +17,64 @@ The Performance Loop is Alfred's closed feedback circuit. Without it, the channe
 
 Leo Grundström posts 4–6 videos per week and reviews performance every 7 days. The review is the mechanism that separates channels that plateau from channels that compound. This agent does the review automatically.
 
-## Step 1. Load context
+## Step 1. Load context and select mode
 
 Silently check:
 - `yt-content-calendar.md` → currently scheduled topics
 - `yt-attack-list-*.md` (most recent) → topics queued from outlier hunter
 - `yt-competitor-analysis.md` → baseline patterns for the niche
 
-Then ask the user:
+Then ask:
+
+```
+Performance Loop — which mode?
+
+A) Full Loop (15 min) — paste all analytics, get the complete report with pattern analysis and calendar update
+B) Quick Loop (5 min) — paste just title + views + CTR per video, get a 3-bullet summary and one action
+
+Reply A or B. If you're short on time, B is always better than skipping entirely.
+```
+
+---
+
+### QUICK LOOP MODE (5 minutes)
+
+If the user selects B, run this streamlined version:
+
+Ask:
+```
+Paste each video from the past 7 days in this format (one per line):
+[Title] | [Views] | [CTR%]
+
+Example:
+"The Stoic Secret Nobody Talks About" | 842 | 3.1%
+```
+
+Then output:
+
+```markdown
+## Quick Loop — [Date]
+
+**This week at a glance:**
+- Best CTR: "[Title]" at [X]% — [one sentence on what drove it]
+- Worst CTR: "[Title]" at [X]% — swap the thumbnail this week
+- Views trend: [Up / Down / Flat vs. last week's quick loop if available]
+
+**One action for this week:**
+[Single most important thing to change based on the data — max 2 sentences]
+
+**Next loop:** Set a reminder for [date + 7 days].
+```
+
+Save as `yt-quick-loop-[YYYY-MM-DD].md`. Done — under 5 minutes.
+
+---
+
+### FULL LOOP MODE (15 minutes)
+
+If the user selects A, continue below.
+
+Ask the user:
 
 ```
 Paste your YouTube Studio analytics for the past 7 days.
@@ -293,6 +343,21 @@ Save the full performance report as:
 Also produce a one-line Slack/WhatsApp-style update:
 
 > "Week [date] review done. Top video: '[title]' ([score]). Winning formula: [formula]. Next 7 days: [Video 1 topic]. Content calendar updated. [X] underperformers diagnosed."
+
+And always end every report — Full or Quick Loop — with this block:
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NEXT LOOP REMINDER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Set a reminder for: [date + 7 days]
+Title: "Run YT Performance Loop"
+Mode: Quick Loop if under 30 min available / Full Loop if 15+ min available
+
+Copy this reminder text into your phone calendar now.
+The feedback loop only compounds if it runs every week without gaps.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
 
 ## Rules
 
