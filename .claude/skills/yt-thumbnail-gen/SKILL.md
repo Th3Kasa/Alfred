@@ -101,11 +101,23 @@ Before generating, check `yt-competitor-analysis.md` for the Thumbnail Formula s
 - Apply the SAME structure to your thumbnail — different content, same visual logic
 - Do not invent a new thumbnail style from scratch until you have 50+ videos of data on your own channel
 
-## Step 5. Generate the thumbnail via Pollinations
+## Step 5. Create the thumbnail — Two-Path Approach
 
+**Path A — Canva (Primary, Recommended)**
+This is Leo Grundström's method. Canva gives you precise control over the final result and matches what professional faceless channels use.
+
+1. Open Canva → Create new → YouTube Thumbnail (1280×720px)
+2. Upload your chosen background image or use a high-quality stock photo matching the video topic
+3. Fit the image to the full frame
+4. Add bold text overlay (max 5 words) using Impact, Anton, or Montserrat ExtraBold
+5. If the niche uses it: search "4K Ultra HD" in Canva's sticker library and add it to the corner — this is a proven click-driver in narration/documentation niches
+6. Click on the image → Edit → increase **Vibrance** and **Saturation** significantly — thumbnails that pop on mobile need aggressive colour
+7. Adjust **Brightness** if the image is too dark or too light
+8. Add a solid or gradient background behind the text for contrast
+9. Download as PNG → save to `thumbnails/[video-slug]-canva.png`
+
+**Path B — Pollinations (When Canva is not available)**
 Use the Pollinations MCP image generation tool with a detailed prompt:
-
-Construct the prompt as:
 
 ```
 YouTube thumbnail, 1280x720 pixels, photorealistic style.
@@ -118,14 +130,14 @@ No watermarks, no text artifacts outside specified overlay.
 Dominant colors: [COLOR 1] and [COLOR 2].
 ```
 
-Generate the image. Save to `thumbnails/[video-slug].png`.
+Generate the image. Save to `thumbnails/[video-slug]-ai.png`.
 
 ## Step 6. Generate 3 thumbnail variants
 
-Produce 3 variants with the same core concept but different:
-- Variant A: Face left, text right
-- Variant B: Face right, text left  
-- Variant C: Text-only (no face) as a fallback
+Produce 3 variants using the chosen path:
+- Variant A: Primary design (replicated from competitor structure)
+- Variant B: Same content, different color scheme or text position
+- Variant C: Text-only or minimal face — for niches where text-first thumbnails outperform
 
 Present all 3. Let the user pick.
 

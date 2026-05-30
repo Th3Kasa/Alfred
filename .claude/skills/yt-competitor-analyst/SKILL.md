@@ -19,6 +19,20 @@ If the user has already pasted YouTube URLs in chat, use those. Otherwise ask:
 
 Also check if `yt-niche-scout-report.md` exists in the project — if it does, read the "Top channels to study" sections and pre-fill the channel suggestions.
 
+## Step 1b. Channel Cloning System (Leo Grundström's full method)
+
+For each channel, run this structured extraction pipeline before any analysis:
+
+1. Identify the 5 most viral videos from the channel (use the two-list method in Step 3)
+2. For each video URL, extract the transcript using: `https://www.youtubetotranscript.com` — paste the YouTube URL and copy the full transcript
+3. Save all 5 transcripts as separate `.txt` files in `competitor-transcripts/[channel-name]/`
+4. Open a **Claude Project** (not a regular chat) — this is critical for maintaining context across all 5 transcripts
+5. Upload all 5 transcripts as reference documents in the Project
+6. Prompt Claude to analyze: *"Analyze these 5 transcripts. Extract: the hook structure (exact first 30 seconds), script architecture (section breakdown), language tone, transition phrases, CTA placement, average sentence length, and any recurring phrases. Give me a reusable template I can use to write new scripts for this channel's style."*
+7. Save Claude's output as `competitor-transcripts/[channel-name]/style-guide.md`
+
+**This style guide becomes the scripting foundation** — paste it into `/yt-script-writer` when writing videos in this niche. Claude will write new scripts that structurally match the proven competitor format without copying their words.
+
 ## Step 2. For each channel, extract surface data
 
 Use open-websearch and duckduckgo to search: `site:youtube.com "[channel name]" subscribers views`

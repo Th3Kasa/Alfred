@@ -51,11 +51,15 @@ Extract:
 | Finance / Business | 10–20 min | High-intent viewer, tolerates length for value |
 | Entertainment / Commentary | 5–12 min | Pacing matters more than depth |
 | Documentary / Story | 15–30 min | Viewer expects a journey |
+| Narration / Faceless (AI) | **30–60 min** | Higher RPM, more mid-roll ad slots, viewer expects immersive content |
 | Tech review | 8–15 min | Benchmark + comparison content |
 | Motivational / Self-help | 6–12 min | Attention shorter, emotional peaks needed |
 | Shorts-focused | 30–60 sec | Algorithm-driven, separate strategy |
 
-Output a clear recommendation: "[X–Y minutes is the target for this niche. Your script is [Z] minutes raw. [Keep / trim X minutes from section Y]."
+**RPM note for faceless channels (from Leo Grundström's system):**
+Longer videos (30–60 minutes) earn significantly more per 1,000 views because YouTube can place more mid-roll ads. In narration niches (animal stories, history, true crime, stoic content), a 45-minute video can earn 3–5× the RPM of a 10-minute video on the same topic. If the niche supports it, **default to 30+ minutes**.
+
+Output a clear recommendation: "[X–Y minutes is the target for this niche. Your script is [Z] minutes raw. [Keep / trim / expand X section]."
 
 ## Step 4. Write the full production brief
 
@@ -132,10 +136,11 @@ Use CapCut's auto-caption feature. Review and fix errors. Bold key words. Captio
 
 ### B-Roll Strategy
 - **Primary source (zero cost):** Pixabay — search the specific concept from each script section
+- **AI-generated footage (zero cost):** Google Gemini generates 3 free AI video clips per day. Use these when stock footage doesn't match the script precisely — especially for abstract concepts, futuristic visuals, or custom scenes
 - **Ratio for faceless channels:** 80–100% b-roll / 0–20% AI avatar or talking head
 - **Ratio for face-on-camera:** 60% talking head / 40% b-roll
 - **B-roll timing:** New clip every 4–5 seconds. No exceptions.
-- **Additional free sources:** Pexels, Unsplash video, screen recordings of tools/software
+- **Additional free sources:** Pexels, Unsplash video, screen recordings of tools/software, CapCut's built-in stock materials tab
 - **Specific b-roll suggestions by script section:**
 
 | Script timestamp | B-roll suggestion |

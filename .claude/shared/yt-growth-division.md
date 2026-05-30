@@ -33,16 +33,23 @@ Run a complete, high-quality YouTube channel operation with 95% automation. Ever
 
 All agents run exclusively on free tools:
 
-| Tool | What it does | Used by |
-|------|-------------|---------|
-| `youtube-transcript` MCP | Pulls full transcripts of any YouTube video | Competitor Analyst, Script Writer |
-| `duckduckgo` MCP | Free web search — research, trend detection | All agents |
-| `open-websearch` MCP | Multi-engine search (Bing/DDG/Brave/Exa) | All agents |
-| `pollinations` MCP | Free AI image generation — thumbnails | Thumbnail Gen |
-| `agent-browser` skill | Browser automation — scrape channel pages | Competitor Analyst |
-| `markdownify` MCP | Convert web pages to clean markdown | Research tasks |
+| Tool | What it does | Used by | Cost |
+|------|-------------|---------|------|
+| `youtube-transcript` MCP | Pulls full transcripts of any YouTube video | Competitor Analyst, Script Writer | Free |
+| `duckduckgo` MCP | Free web search — research, trend detection | All agents | Free |
+| `open-websearch` MCP | Multi-engine search (Bing/DDG/Brave/Exa) | All agents | Free |
+| `pollinations` MCP | Free AI image generation — thumbnails | Thumbnail Gen | Free |
+| `agent-browser` skill | Browser automation — scrape channel pages | Competitor Analyst | Free |
+| `markdownify` MCP | Convert web pages to clean markdown | Research tasks | Free |
+| YouTubeToTranscript.com | Extract competitor transcripts for Claude Project training | Competitor Analyst | Free |
+| Google Gemini | AI-generated video clips (3 free/day) | Video Director | Free |
+| Canva | Thumbnail design (primary tool) | Thumbnail Gen | Free tier |
+| CapCut | Video editing with Leo's workflow | Video Director | Free |
+| ElevenLabs | Voiceover generation | Script → Production pipeline | Free tier |
+| Pixabay | Stock footage and images | Video Director | Free |
+| NexLev MCP | AI-powered competitor analytics (optional) | Niche Scout | Free tier |
 
-**No paid APIs. No subscriptions. No external keys required.**
+**Core stack is entirely free. NexLev optional for advanced niche research.**
 
 ---
 

@@ -83,6 +83,31 @@ This is the primary niche discovery method — faster and more accurate than key
 
 **What this tells you:** YouTube is algorithmically pushing this content to people even from small channels — meaning the algorithm has identified demand it can't satisfy. A new channel can fill that gap.
 
+## Step 2b. NexLev MCP Method (Advanced — If NexLev is connected)
+
+If the user has NexLev MCP configured, this is faster and more data-driven than the manual method:
+
+1. Open a Claude conversation with NexLev MCP active
+2. Drop this exact prompt — Leo Grundström's verified niche-finding prompt:
+
+   > **"find me 30 channels under 100k subs created in the last 6 months, posting 3+ times per week, with at least one viral video. sort by monthly revenue."**
+
+3. Review the results — these are emerging niches with live data behind them
+4. Pick the niche that matches the user's interests and has the highest monthly revenue from channels still under 100K subs
+5. Validate with the Fresh Account Method to confirm the algorithm is pushing this niche
+
+**Full one-day niche-to-published-video workflow (with NexLev MCP):**
+1. Ask Claude (with NexLev active) to find 10 best niches with data
+2. Pick one niche
+3. Ask Claude to find the top-performing videos in that niche
+4. Pick one topic from those results
+5. Run `/yt-script-writer` with that topic
+6. Generate voiceover with ElevenLabs
+7. Assemble in CapCut
+8. Publish
+
+**Free alternative if NexLev is not configured:** Run Step 2 (Fresh Account Method) manually — takes 20–30 minutes instead of 2 minutes.
+
 **Proven faceless niches that consistently follow this pattern (as of 2025–2026):**
 - AI tools / tutorials (high CPM, high demand)
 - Stoic philosophy / motivation (easy to produce, global audience)

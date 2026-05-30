@@ -185,12 +185,30 @@ Output the stack for this channel:
 
 | Phase | Subscribers | Est. Monthly Income | Primary Source |
 |-------|-------------|--------------------|-|
-| Phase 1 | 0–1,000 | $0–$200 | Affiliate only |
-| Phase 2 | 1,000–10,000 | $200–$2,000 | AdSense + Affiliate |
-| Phase 3 | 10,000–100,000 | $2,000–$15,000 | AdSense + Sponsors + Product |
-| Phase 4 | 100,000+ | $15,000–$100,000+ | Full stack |
+| Phase 0 | 0–1,000 | $0 | Learning / Building |
+| Phase 1 | 1,000–10,000 | $200–$1,000 | Affiliate only + AdSense |
+| Phase 2 | 10,000–50,000 | $1,000–$5,000 | AdSense + Affiliate + Digital product launch |
+| Phase 3 | 50,000–150,000 | $5,000–$30,000 | All streams + Community |
+| Phase 4 | 150,000+ | $30,000–$100,000+ | Full stack — digital products dominate |
 
 *Based on [niche] CPM of $X–$X AUD and typical retention rates. Channel based in Sydney, Australia.*
+
+## Critical Reality Check — Where the Real Money Is
+
+**Leo Grundström's actual revenue breakdown (publicly documented):**
+| Source | Monthly Amount |
+|--------|---------------|
+| YouTube AdSense | ~$3,721 |
+| Digital products | ~$31,439 |
+| Affiliate sales | ~$2,400 |
+| Related projects (community, coaching) | ~$13,900 |
+| **Total** | **~$51,460/month** |
+
+**The lesson:** AdSense is less than 8% of the total. The real money is digital products and community — AdSense just provides the audience and the credibility.
+
+**Implication for strategy:** Build the channel to get subscribers and watch time. Build the digital product to make the money. The channel is the marketing channel, not the revenue channel.
+
+**Digital product launch timing:** Once you have a video hit 100K+ views on a specific topic, that topic has proven audience demand — build a product around it (template pack, course, community, or checklist at $7–$49). The audience that watched the video is pre-qualified to buy.
 
 ## Niche CPM Breakdown
 - **AdSense CPM — Global average (estimated):** $X–$X USD per 1,000 views
@@ -266,6 +284,28 @@ Happy to send our media kit. Interested?
 | 60-sec dedicated spot | $400–$1,000 | $1,500–$4,000 | $5,000–$15,000 |
 | Dedicated video | $800–$2,000 | $3,000–$8,000 | $10,000–$30,000 |
 | Shorts mention | $50–$200 | $200–$800 | $800–$3,000 |
+
+### Community / Discord Launch (Leo's $31K/month model)
+
+This is where the real money comes from. Leo's HowToAI community at its peak generated 10× more than his AdSense revenue.
+
+**When to launch:** When you have 5,000+ subscribers and at least one video at 50K+ views — you have enough proven audience to seed a community.
+
+**Pricing tiers (based on Leo's model):**
+- Full membership: $40/month, $299/year, or $499 one-time
+- Marketplace/resource access only: $10/month or $200 one-time
+- Free tier: Lead gen — free starter course or newsletter to capture emails
+
+**What goes in the community:**
+- Guides, tutorials, SOPs for your niche system
+- Weekly live Q&A calls
+- VA marketplace (people who need VAs + VAs offering services)
+- Asset packs (clip libraries, prompt templates, script frameworks, Canva templates)
+- 1-on-1 mentorship tier (highest ticket)
+
+**Revenue math:** 500 members at $40/month = $20,000/month. This is achievable at 50K subscribers in a teaching niche.
+
+**Platform options (zero upfront cost):** Discord (free), School.com (free tier), Circle (free tier)
 
 ### Course / Product Launch
 - **When to launch:** When a video about the topic hits 100k+ views

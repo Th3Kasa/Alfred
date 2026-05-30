@@ -60,17 +60,33 @@ Call AskUserQuestion:
 ]
 ```
 
-## Step 3. Load competitor script structure
+## Step 3. Load competitor script structure — Claude Project Method
 
-Before writing anything, check `yt-competitor-analysis.md` for the Script Structure section of the top competitor in this niche. This is your architectural blueprint.
+Before writing anything, check `competitor-transcripts/[niche]/style-guide.md` (produced by `/yt-competitor-analyst`). This is your architectural blueprint.
 
-**The "Copy the Structure, Not the Words" rule (Leo Grundström method):**
-- Take the competitor's EXACT script architecture: how long is the intro, how many sections, where the CTA sits, how transitions are phrased
-- Use this structure as your script's skeleton
+**The Claude Project setup (Leo Grundström's exact scripting system):**
+For highest quality output, scripts should be generated inside a **Claude Project** with competitor transcripts loaded as reference documents — not a regular chat:
+1. Open Claude → Create a new Project
+2. Upload the `.txt` transcripts from `competitor-transcripts/[channel-name]/` as Project files
+3. In the Project, prompt: *"I'm setting up this Project to write YouTube scripts for my [niche] channel. I've uploaded transcripts from top competitors as style references. When I give you a topic, write a full script that matches the hook structure, pacing, tone, and section architecture of these examples — but with completely original content."*
+4. From this point, generate scripts within the Project: "Write a script on [TOPIC]"
+5. Claude will match the proven competitor style automatically
+
+**If generating scripts in a regular chat:** Paste the style-guide from `competitor-transcripts/[channel-name]/style-guide.md` as context before prompting.
+
+**The "Copy the Structure, Not the Words" rule:**
+- Take the competitor's EXACT script architecture (intro length, section count, CTA placement, transition phrases)
 - Fill the skeleton with original content, research, and the channel's own angle
-- This ensures your video follows a proven retention pattern rather than a structure you invented
+- Never copy sentences — only the architectural pattern
 
-Target: **Script written in under 10 minutes** for standard-length videos (8–12 min). Use Claude's speed — if a script takes more than 20 minutes, you're over-researching.
+Target: **Script generated in 30 seconds, edited in 15–20 minutes.** Full scripting time: under 30 minutes per video. At 4–6 videos/week, spending more than this is not viable.
+
+**The Human Edit step (mandatory — do not skip):**
+After Claude generates the script, read through it and:
+- Fix any robotic-sounding phrases
+- Add at least one specific data point or number that came from research (not invented)
+- Adjust any lines that sound identical to competitor content
+This step is what separates monetizable content from content Gemini flags as "interchangeable."
 
 ## Step 4. Research the topic
 
