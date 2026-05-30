@@ -4,6 +4,7 @@
 > Created: 2026-05-30
 > Status: Active
 > Cost: Zero — all tools are free with no API keys required
+> Channel location: Sydney, Australia (AEST UTC+10 / AEDT UTC+11)
 
 ---
 
@@ -42,6 +43,20 @@ All agents run exclusively on free tools:
 | `markdownify` MCP | Convert web pages to clean markdown | Research tasks |
 
 **No paid APIs. No subscriptions. No external keys required.**
+
+---
+
+## Location: Sydney, Australia
+
+| Consideration | Detail |
+|---|---|
+| Timezone | AEST (UTC+10) / AEDT (UTC+11, Oct–Apr) |
+| Recommended upload time | 8:00–9:00am AEST Tuesday or Thursday |
+| Why | Hits US evening peak (5–6pm EST) + AU morning commute simultaneously |
+| AdSense currency | AUD — typically 20–40% above global CPM average |
+| Tax | Complete W-8BEN in AdSense for 0% US withholding (AU–US tax treaty) |
+| Affiliate networks | Prioritise Commission Factory, Awin AU, Impact AU before US networks |
+| Audience strategy | Choose Global (higher CPM, more competition) or AU-first (loyal niche, less competition) per niche |
 
 ---
 

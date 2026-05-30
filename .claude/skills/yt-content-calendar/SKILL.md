@@ -133,8 +133,11 @@ For each video, include these production deadlines working backwards from the up
 
 ## Upload Schedule
 - **Frequency:** [X per week]
-- **Best day(s) to publish:** [Day] at [Time] — based on competitor research
-- **Timezone:** [User's timezone or UTC]
+- **Channel location:** Sydney, Australia (AEST UTC+10 / AEDT UTC+11)
+- **Best day(s) to publish:** [Day] — based on competitor research
+- **Upload time (Sydney):** Schedule in YouTube Studio for **8:00–9:00am AEST** (Tuesday or Thursday recommended)
+- **Why:** This hits the US evening peak (5–6pm EST previous day) and the Australian morning commute simultaneously — maximising the first 24-hour view window that drives algorithm ranking
+- **Daylight saving note:** Sydney observes AEDT (UTC+11) from first Sunday in October to first Sunday in April. Adjust scheduled upload time by 1 hour accordingly.
 
 ## Content Pipeline
 

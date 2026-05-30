@@ -59,13 +59,21 @@ Then ask:
 
 ## Step 2. Research niche monetization landscape
 
+**Channel location: Sydney, Australia.** Apply Australian-specific context throughout:
+- AdSense pays in AUD. Australian CPM is typically **20–40% higher than the global average** due to advertiser competition in AU/NZ markets.
+- AdSense earnings are subject to Australian tax (GST-registered creators may receive GST-inclusive payments — advise user to consult an accountant once income exceeds $75,000 AUD/year).
+- YouTube withholds US tax at 0% for Australian creators (Australia has a tax treaty with the US) — user must complete the W-8BEN form in AdSense settings.
+- Australian affiliate programs often pay in AUD and have separate sign-up portals from US versions (e.g., Commission Factory, Awin AU, Impact AU).
+- Sponsors targeting Australian audiences pay a premium — flag this when reaching out.
+
+Search: `"[niche]" YouTube CPM Australia 2024 2025 RPM rates`
 Search: `"[niche]" YouTube CPM 2024 2025 RPM rates`
-Search: `"[niche]" YouTube sponsorship rates 2024`
-Search: `"[niche]" affiliate programs commission rates`
+Search: `"[niche]" YouTube sponsorship rates Australia 2024`
+Search: `"[niche]" affiliate programs Australia commission rates`
 Search: `"[niche]" YouTube creator income breakdown`
 
 Extract:
-- Typical CPM range for this niche
+- Typical CPM range for this niche (report both global and AU estimates)
 - Common sponsor categories and what they pay per 1,000 views
 - Top affiliate programs with commission rates
 - Creator fund / other platform income if applicable
@@ -88,10 +96,11 @@ Calculate milestone dates based on the user's current status and niche research:
 - Be honest — it typically takes 3 to 12 months depending on upload frequency and quality
 
 **What to do in Phase 1 (before YPP):**
-- Affiliate links in video descriptions (no follower requirement)
-- Digital products (Gumroad, Payhip — free to list)
+- Affiliate links in video descriptions (no follower requirement) — prioritise AU-based programs via Commission Factory or Awin AU first, then global programs
+- Digital products (Gumroad, Payhip — free to list, both accept AUD)
 - Referral programs that pay per sign-up
 - Services (use the channel as a portfolio)
+- **W-8BEN form:** Complete immediately in Google AdSense → Payments → Tax info. Required for 0% US withholding under the Australia–US tax treaty. Do this before the first cent is earned.
 
 ### Phase 2: YPP Active (Month 3–6)
 
@@ -146,13 +155,23 @@ Output the stack for this channel:
 | Phase 3 | 10,000–100,000 | $2,000–$15,000 | AdSense + Sponsors + Product |
 | Phase 4 | 100,000+ | $15,000–$100,000+ | Full stack |
 
-*Based on [niche] CPM of $X–$X and typical retention rates*
+*Based on [niche] CPM of $X–$X AUD and typical retention rates. Channel based in Sydney, Australia.*
 
 ## Niche CPM Breakdown
-- **AdSense CPM (estimated):** $X–$X per 1,000 views
-- **RPM (what you actually receive after YouTube's cut):** $X–$X
+- **AdSense CPM — Global average (estimated):** $X–$X USD per 1,000 views
+- **AdSense CPM — Australian audience (estimated):** $X–$X AUD (typically 20–40% above global average)
+- **RPM (what you actually receive after YouTube's 45% cut):** $X–$X AUD
+- **Currency note:** AdSense pays in AUD to Australian accounts. All income figures in this playbook are AUD unless stated otherwise.
 - **Best-performing content for CPM:** [specific video types that get higher CPM in this niche]
 - **Worst-performing for CPM:** [avoid these — low RPM]
+- **Tax reminder:** Complete W-8BEN in AdSense → Payments → Tax info for 0% US withholding.
+
+### Affiliate Programs — Australia Priority
+Check these AU-specific networks before defaulting to US programs:
+- **Commission Factory** — largest AU affiliate network, covers most major AU brands
+- **Awin AU** — strong finance, retail, and SaaS coverage
+- **Impact AU** — good for SaaS and tech tools
+- **Rakuten AU** — retail and lifestyle brands
 
 ## Phase 1: Pre-YPP Income (Start Today)
 

@@ -63,9 +63,15 @@ Call AskUserQuestion:
 
 If the user already gave this context in chat, skip to Step 2 using what they said.
 
+**Location context:** This channel uploads from Sydney, Australia. Apply these considerations throughout:
+- Australian creators can target **global audiences** (US, UK, CA are highest CPM) or **AU-first audiences** (smaller pool, higher CPM per viewer, less competition)
+- Niches with strong AU demand (property, HECS/superannuation finance, Australian sport commentary, local lifestyle) benefit from lower competition and loyal local audiences
+- Niches targeting US audiences (tech, SaaS, business, finance) get higher absolute CPM but more competition
+- Flag which audience strategy each niche suits
+
 ## Step 2. Generate niche candidates
 
-Based on the user's interests and goals, generate 8 to 12 niche candidates. Mix: 2 to 3 broad niches, 4 to 6 sub-niches, 2 to 3 micro-niches.
+Based on the user's interests and goals, generate 8 to 12 niche candidates. Mix: 2 to 3 broad niches, 4 to 6 sub-niches, 2 to 3 micro-niches. For each, note the recommended audience target (Global / AU-first / Both).
 
 For each candidate, immediately proceed to research in Step 3.
 
