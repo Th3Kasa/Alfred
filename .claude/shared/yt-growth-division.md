@@ -10,7 +10,11 @@
 
 ## Mission
 
-Run a complete, high-quality YouTube channel operation with 95% automation. Every step from niche selection to a published video with optimized title and thumbnail is handled by the division. The human role is: approve decisions, film or record content, and publish.
+Run a complete, high-quality YouTube channel operation with 95% automation. Every step from niche selection to a published video with optimized title and thumbnail is handled by the division. The human role is: approve decisions and publish.
+
+**Channel type:** Fully faceless — AI voice (ElevenLabs) + stock footage (Pixabay/CapCut). No filming required.
+
+**Evergreen-first principle:** Every piece of content is built to rank and drive views for 12+ months. No trending-news content. No date-specific hooks. Evergreen content compounds — it earns views while you sleep.
 
 ---
 
@@ -26,6 +30,9 @@ Run a complete, high-quality YouTube channel operation with 95% automation. Ever
 | **Thumbnail Gen** | `yt-thumbnail-gen` | Designs and generates thumbnails via Pollinations (free) | "make me a thumbnail" |
 | **Monetization Strategist** | `yt-monetization-strategist` | Full monetization roadmap — YPP, affiliates, sponsors, products | "how do I monetize my channel" |
 | **Content Calendar** | `yt-content-calendar` | 30/90-day content pipeline with topics, deadlines, and upload schedule | "content calendar" or "what should I post" |
+| **Outlier Hunter** | `yt-outlier-hunter` | Automated viral topic discovery — Attack Score formula scans competitors weekly | "find topics", "what should I make next", "find viral videos" |
+| **VA Package** | `yt-va-package` | Complete 5-section VA production brief — voiceover, b-roll, Canva, CapCut, upload | "create VA brief", "production brief", "send to VA" |
+| **Performance Loop** | `yt-performance-loop` | Weekly analytics review — scores videos, finds patterns, updates content calendar | "performance review", "what's working", "check my analytics" |
 
 ---
 
@@ -39,9 +46,9 @@ All agents run exclusively on free tools:
 | `duckduckgo` MCP | Free web search — research, trend detection | All agents | Free |
 | `open-websearch` MCP | Multi-engine search (Bing/DDG/Brave/Exa) | All agents | Free |
 | `pollinations` MCP | Free AI image generation — thumbnails | Thumbnail Gen | Free |
-| `agent-browser` skill | Browser automation — scrape channel pages | Competitor Analyst | Free |
+| `agent-browser` skill | Browser automation — scrape channel pages | Competitor Analyst, Outlier Hunter | Free |
 | `markdownify` MCP | Convert web pages to clean markdown | Research tasks | Free |
-| YouTubeToTranscript.com | Extract competitor transcripts for Claude Project training | Competitor Analyst | Free |
+| YouTubeToTranscript.com | Extract competitor transcripts for Claude Project training | Competitor Analyst, Script Writer | Free |
 | Google Gemini | AI-generated video clips (3 free/day) | Video Director | Free |
 | Canva | Thumbnail design (primary tool) | Thumbnail Gen | Free tier |
 | CapCut | Video editing with Leo's workflow | Video Director | Free |
@@ -70,6 +77,8 @@ All agents run exclusively on free tools:
 ## Standard Workflow (New Channel)
 
 ```
+CHANNEL SETUP (one-time):
+
 Step 1: /yt-niche-scout
   → Research and pick the niche. Output: yt-niche-scout-report.md
 
@@ -82,23 +91,39 @@ Step 3: /yt-monetization-strategist
 Step 4: /yt-content-calendar
   → Plan first 30 days. Output: yt-content-calendar.md
 
-Step 5 (per video): /yt-script-writer
-  → Write the script for the next scheduled video. Output: scripts/[slug].md
+---
 
-Step 6 (per video): /yt-video-director
-  → Production brief for filming and editing. Output: inline + production-notes/[slug].md
+PER VIDEO (repeat for every video):
 
-Step 7 (per video): /yt-title-optimizer
-  → 10 title variants, scored. Pick the winner.
+Step 5: /yt-outlier-hunter
+  → Scan competitors weekly. Find Attack Score topics. Output: yt-attack-list-[date].md
 
-Step 8 (per video): /yt-thumbnail-gen
-  → Generate 3 thumbnail variants. Pick the winner. Output: thumbnails/[slug].png
+Step 6: /yt-script-writer [approved topic]
+  → APEX framework script with 3T structure. 10-point quality gate. Output: scripts/[slug].md
 
-Step 9: Upload to YouTube
-  → Human task. Takes 5 minutes.
+Step 7: /yt-title-optimizer
+  → 10 scored title variants. Pick the winner.
 
-Step 10 (weekly): /yt-competitor-analyst on 1–2 new channels or recent videos
-  → Stay current. Update strategy monthly.
+Step 8: /yt-thumbnail-gen
+  → 3 thumbnail variants via Canva brief or Pollinations. Output: thumbnails/[slug]-*.png
+
+Step 9: /yt-va-package
+  → Complete 5-section production brief for the VA. Output: va-brief-[slug].md
+
+Step 10: VA executes the brief
+  → ElevenLabs voiceover → Pixabay b-roll → Canva thumbnail → CapCut edit → YouTube upload
+  → Human approves the final video only.
+
+---
+
+WEEKLY MAINTENANCE:
+
+Step 11 (every 7 days): /yt-performance-loop
+  → Paste YouTube Studio analytics. Scores every video. Identifies winning patterns.
+  → Generates Next 7 Days action plan. Updates content calendar automatically.
+
+Step 12 (monthly): /yt-competitor-analyst on 2 new channels
+  → Keep competitor intelligence current. Update strategy.
 ```
 
 ---
@@ -159,6 +184,6 @@ Then the standard workflow above applies.
 
 ---
 
-## Installed: 2026-05-30
+## Installed: 2026-05-30 | Updated: 2026-05-30
 
-Approved by Alfred. All 8 agents operational. Zero-cost tool stack confirmed.
+Approved by Alfred. 11 agents operational. Zero-cost tool stack confirmed. Evergreen-first principle applied across all agents.

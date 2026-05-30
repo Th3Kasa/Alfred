@@ -122,6 +122,9 @@
 | yt-thumbnail-gen | YouTube / Design | Thumbnail Gen | Free thumbnail generation via Pollinations |
 | yt-monetization-strategist | YouTube / Growth | Monetization Strategist | YPP roadmap, affiliates, sponsors, products |
 | yt-content-calendar | YouTube / Operations | Content Calendar | 30/90-day pipeline with topics, deadlines, upload schedule |
+| yt-outlier-hunter | YouTube / Research | Outlier Hunter | Viral topic discovery via Attack Score formula — automated weekly scan |
+| yt-va-package | YouTube / Production | VA Package | Complete 5-section VA production brief — voiceover, b-roll, Canva, CapCut, upload |
+| yt-performance-loop | YouTube / Analytics | Performance Loop | Weekly analytics review — scores videos, identifies patterns, updates calendar |
 
 ### Zero-Cost Tool Stack Used
 
@@ -149,6 +152,8 @@
 | 2026-05-29 | INSTALL | duckduckgo, pollinations, markdownify, excalidraw, antv-chart, open-websearch, youtube-transcript, arxiv | Alfred (batch 3 — free no-key) |
 | 2026-05-30 | NEW DEPARTMENT | YouTube Growth Division — 8 skills | Alfred (zero-cost, internal build) |
 | 2026-05-30 | INSTALL | yt-niche-scout, yt-competitor-analyst, yt-script-writer, yt-video-director, yt-title-optimizer, yt-thumbnail-gen, yt-monetization-strategist, yt-content-calendar | Alfred (YouTube Growth Division) |
+| 2026-05-30 | INSTALL | yt-outlier-hunter, yt-va-package, yt-performance-loop | Alfred (YT Division — Phase 2 agents) |
+| 2026-05-30 | UPDATE | yt-script-writer | Alfred (APEX framework rewrite — evergreen-first, 3T structure, 10-point quality gate) |
 | 2026-05-29 | DEFERRED | firecrawl (free key req), figma-context (free key req), n8n-mcp (n8n credentials), better-icons (no npm pkg), designlang (CLI only, not MCP) | Alfred (needs credentials or not an MCP server) |
 | 2026-05-29 | DEFERRED | graphiti (needs Docker+Neo4j infra), apify-mcp (needs APIFY_TOKEN) | Alfred (user setup required) |
 | 2026-05-29 | DEFERRED | trigger.dev (SSE idle-timeout bug), trendradar (GPL-3.0 review), phoenix/arize (ELv2 review) | Alfred (pending decisions) |
