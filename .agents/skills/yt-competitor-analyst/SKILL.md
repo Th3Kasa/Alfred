@@ -30,18 +30,28 @@ Extract from search results:
 - Channel age
 - Niche / content category
 
-## Step 3. Find top 10 performing videos
+## Step 3. Find two video lists: All-Time Best + Recent Winners
 
-Search: `"[channel name]" YouTube most viewed videos 2024 2025`
+Effective competitor research requires two separate video lists, not just one. This is the Leo Grundström method.
 
-Or use agent-browser to navigate to their channel's Videos tab sorted by "Most Popular."
+**List A — All-Time Top 10** (proves what the channel is built on):
+Search: `"[channel name]" YouTube most viewed videos 2025 2026`
+Or use agent-browser to navigate to Videos tab → sort "Most Popular."
 
-For each of the top 10 videos, collect:
+**List B — Recent High-Performers** (proves what's working RIGHT NOW):
+Navigate to Videos tab → sort "Most Recent" → look at last 4 weeks of uploads.
+Find videos with **high views relative to the channel's subscriber count** — e.g., a 50K-sub channel getting 300K views on a video from last week.
+These are the topics the algorithm is currently pushing. Copy these first — they're proven to work in the current algorithm cycle.
+
+**The View-to-Subscriber Ratio rule:** A video getting more than 5× the channel's subscriber count in views within the first 30 days is considered viral for that channel. Flag these as priority topics to cover.
+
+For each video in both lists, collect:
 - Title (exact)
 - View count
 - Publish date
 - Video length
 - Thumbnail description (what is shown: face, text, colours, style)
+- View-to-subscriber ratio (views ÷ channel subs at time of publish)
 
 ## Step 4. Pull transcripts of top 5 videos
 
@@ -127,6 +137,7 @@ Output one analysis per channel in this format:
 - **Shorts:** Yes/No — X% of content
 - **Channel age:** X years
 - **Estimated monthly views:** Xm
+- **Faceless or face-on-camera:** [Faceless / Face / Hybrid]
 
 ## What's Working
 
@@ -142,17 +153,34 @@ Example titles:
 
 ### Script Structure
 [Exact breakdown: intro length, act structure, CTA placement]
+[Note: This structure should be used as the BASE for your own scripts — copy the architecture, not the words]
 
 ### Thumbnail Formula
 [Description: face emotion + text pattern + color + style]
+[Note: Copy this visual structure for your own thumbnails using Pollinations]
 
 ### Language Style
 [Tone, sentence length, signature phrases]
+[Note: Use this style guide when prompting Claude to write scripts]
 
-## Top 5 Videos (by views)
+## Video Performance (Two-List Method)
+
+### All-Time Top 5 (what built the channel)
 | # | Title | Views | Length | Why it worked |
 |---|-------|-------|--------|---------------|
 | 1 | [title] | Xm | Xm Xs | [1 sentence] |
+...
+
+### Recent High-Performers — Last 30 Days (what's working NOW)
+| # | Title | Views | Sub ratio | Days live | Topic to replicate? |
+|---|-------|-------|-----------|-----------|---------------------|
+| 1 | [title] | Xk | Xx | X days | Yes / No |
+...
+
+**Priority topics to cover first** (from recent list with highest view/sub ratio):
+1. [Topic]
+2. [Topic]
+3. [Topic]
 ...
 
 ## Monetization

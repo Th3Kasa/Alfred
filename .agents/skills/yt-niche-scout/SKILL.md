@@ -69,26 +69,52 @@ If the user already gave this context in chat, skip to Step 2 using what they sa
 - Niches targeting US audiences (tech, SaaS, business, finance) get higher absolute CPM but more competition
 - Flag which audience strategy each niche suits
 
-## Step 2. Generate niche candidates
+## Step 2. Run "The Fresh Account Method" (Leo Grundström's Niche Finding Technique)
 
-Based on the user's interests and goals, generate 8 to 12 niche candidates. Mix: 2 to 3 broad niches, 4 to 6 sub-niches, 2 to 3 micro-niches. For each, note the recommended audience target (Global / AU-first / Both).
+This is the primary niche discovery method — faster and more accurate than keyword tools alone.
 
-For each candidate, immediately proceed to research in Step 3.
+**The method:**
+1. Open YouTube in a private/incognito browser window (simulates a fresh account with no personalization)
+2. Scroll the homepage for 5 to 10 minutes without clicking anything
+3. Look specifically for channels with **under 100K subscribers getting disproportionately high views** (e.g., 15K subscribers, 800K views on a video)
+4. This mismatch = high demand but low supply = the opportunity window
+5. Note every niche category where you see this pattern
+6. **Validate**: Search YouTube for the biggest channel in that niche's most popular video title → if other similar channels are also getting high views, the niche is proven; if they're stuck at 100 views each, the niche is oversaturated or dying
 
-## Step 3. Research each niche
+**What this tells you:** YouTube is algorithmically pushing this content to people even from small channels — meaning the algorithm has identified demand it can't satisfy. A new channel can fill that gap.
+
+**Proven faceless niches that consistently follow this pattern (as of 2025–2026):**
+- AI tools / tutorials (high CPM, high demand)
+- Stoic philosophy / motivation (easy to produce, global audience)
+- Animal stories / wildlife narration (low competition, high views)
+- Car crash / dash cam compilations (viral, high CTR)
+- True crime narration (massive audience, mid CPM)
+- Quiz / trivia channels (high retention, easy to scale)
+- Unboxing / product reveal (affiliate-friendly)
+- Finance for beginners (highest CPM, $15–$50+)
+
+## Step 3. Generate niche candidates
+
+Based on the Fresh Account Method findings AND the user's interests and goals, generate 8 to 12 niche candidates. Mix: 2 to 3 broad niches, 4 to 6 sub-niches, 2 to 3 micro-niches. For each, note the recommended audience target (Global / AU-first / Both) and whether it's suitable for faceless production.
+
+For each candidate, immediately proceed to research in Step 4.
+
+## Step 4. Research each niche
 
 For every niche candidate, run these research tasks in order:
 
-### 3a. Demand check
-Search: `"[niche] YouTube channel" views subscribers` and `"[niche]" YouTube 2024 2025 trending`
-- Are channels in this niche getting 100k+ views on videos?
+### 4a. Demand check (use the Fresh Account signal first)
+Search: `"[niche] YouTube channel" views subscribers` and `"[niche]" YouTube 2025 2026 trending`
+- Are small channels (under 100K subs) getting 100K+ views on individual videos?
 - Is there growing search interest (not declining)?
+- Run Fresh Account test if possible
 
-### 3b. Competition analysis
+### 4b. Competition analysis
 Search: `top [niche] YouTube channels`
-- How many channels have 100k+ subscribers?
+- How many channels have 100K+ subscribers?
 - What is the subscriber count of the top 5 channels?
 - Are there gaps (topics nobody is covering well)?
+- **Key question**: Can a channel posting 4–6 times per week compete here?
 
 ### 3c. Monetization potential
 Search: `[niche] YouTube CPM 2024` and `[niche] affiliate programs`
@@ -102,24 +128,32 @@ Search: `most viewed [niche] YouTube videos` and `[niche] YouTube Shorts perform
 - Shorts-friendly or long-form only?
 - Tutorial vs opinion vs news vs entertainment?
 
-### 3e. Saturation test
-Search: `[niche] YouTube channel started [current year-1] growth`
+### 4e. Saturation test
+Search: `[niche] YouTube channel started [current year] growth`
 - Are new channels still breaking through?
 - What did they do differently?
+- Can this niche sustain 4–6 new videos per week without topic exhaustion?
 
-## Step 4. Score each niche
+### 4f. Faceless production viability
+- Can videos be produced with: AI script + ElevenLabs voiceover + Pixabay footage + CapCut editing?
+- Is a human face/expertise required, or can AI carry the content?
+- Faceless-viable niches: narration, tutorials, compilations, explainers, motivation, quizzes
+- Face-required niches: personal brand, vlogs, commentary, reaction — flag these clearly
 
-Score every niche on these 5 dimensions (1 to 10 each):
+## Step 5. Score each niche
+
+Score every niche on these 6 dimensions (1 to 10 each):
 
 | Dimension | What it measures |
 |---|---|
-| **Demand** | Search volume + view counts — is the audience big enough? |
-| **Competition** | Inverse of saturation — can a new channel break through? |
+| **Demand** | Fresh Account signal + search volume — small channels getting big views? |
+| **Competition** | Inverse of saturation — can a new channel break through posting 4–6/week? |
 | **CPM** | Ad revenue potential (finance/tech = high, entertainment = low) |
 | **Affiliate upside** | Products/services to promote alongside AdSense |
-| **Creator fit** | Match to user's stated interests and camera preferences |
+| **Creator fit** | Match to user's interests and whether it suits faceless production |
+| **Faceless viability** | Can AI script + ElevenLabs + Pixabay + CapCut produce this? |
 
-Total score = (Demand × 1.5) + Competition + CPM + Affiliate + Fit
+Total score = (Demand × 1.5) + Competition + CPM + Affiliate + Fit + Faceless
 
 ## Step 5. Produce the niche report
 

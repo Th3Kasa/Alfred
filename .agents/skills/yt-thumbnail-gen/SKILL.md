@@ -91,6 +91,16 @@ Text formatting rules:
 - Font: bold, condensed sans-serif (Impact, Montserrat ExtraBold, Anton)
 - Text has a drop shadow or outline for contrast
 
+## Step 4b. Study competitor thumbnail structure first
+
+Before generating, check `yt-competitor-analysis.md` for the Thumbnail Formula section of the top competitors in this niche.
+
+**The Copy-the-Structure rule (Leo Grundström method):**
+- Identify the visual architecture the top competitors use (face position, text placement, color scheme, hero element type)
+- This is the proven pattern that audiences in this niche already click on
+- Apply the SAME structure to your thumbnail — different content, same visual logic
+- Do not invent a new thumbnail style from scratch until you have 50+ videos of data on your own channel
+
 ## Step 5. Generate the thumbnail via Pollinations
 
 Use the Pollinations MCP image generation tool with a detailed prompt:
@@ -149,8 +159,23 @@ Present all 3. Let the user pick.
 ## Niche Comparison
 [Based on yt-competitor-analysis.md — how does this thumbnail compare to the niche's top performers?]
 
-## A/B Test Plan
-If you get under 4% CTR in the first 48 hours, swap to Variant [B/C] and monitor for 48 more hours.
+## A/B Test Plan — YouTube's Built-In Test & Compare Feature
+YouTube Studio has a native A/B thumbnail testing tool called "Test & Compare." Use it:
+1. Upload your video with Variant A as the thumbnail
+2. In YouTube Studio → Content → click your video → Thumbnails → "Test & Compare"
+3. Upload Variant B and Variant C
+4. YouTube automatically splits traffic and shows which gets the highest CTR
+5. After 48–72 hours, YouTube selects the winner automatically
+
+This is superior to manually swapping thumbnails because YouTube controls the split test scientifically. Always use this feature — never just guess which thumbnail works.
+
+**CTR benchmarks:**
+- Under 2%: Thumbnail is failing — swap immediately
+- 2–4%: Average — test a new variant
+- 4–6%: Good — keep and monitor
+- 6%+: Excellent — study this thumbnail and replicate its structure for future videos
+
+**Thumbnail automation note (2026 trend):** Leo Grundström noted thumbnails are trending toward full automation. Until automated tools are integrated, the Pollinations + Test & Compare pipeline above is the closest zero-cost equivalent.
 ```
 
 ## Rules

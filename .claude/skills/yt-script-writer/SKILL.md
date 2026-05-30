@@ -60,15 +60,29 @@ Call AskUserQuestion:
 ]
 ```
 
-## Step 3. Research the topic
+## Step 3. Load competitor script structure
 
-Before writing, spend 5 minutes on research:
+Before writing anything, check `yt-competitor-analysis.md` for the Script Structure section of the top competitor in this niche. This is your architectural blueprint.
 
-Search: `"[topic]" tutorial best method 2024 2025`
-Search: `"[topic]" common mistakes beginners`
+**The "Copy the Structure, Not the Words" rule (Leo Grundström method):**
+- Take the competitor's EXACT script architecture: how long is the intro, how many sections, where the CTA sits, how transitions are phrased
+- Use this structure as your script's skeleton
+- Fill the skeleton with original content, research, and the channel's own angle
+- This ensures your video follows a proven retention pattern rather than a structure you invented
+
+Target: **Script written in under 10 minutes** for standard-length videos (8–12 min). Use Claude's speed — if a script takes more than 20 minutes, you're over-researching.
+
+## Step 4. Research the topic
+
+Before writing, spend 5 minutes max on research:
+
+Search: `"[topic]" best method 2025 2026`
+Search: `"[topic]" common mistakes`
 Search: `"[topic]" what nobody tells you`
 
 Extract: 3 to 5 surprising, specific facts or insights that most people in this niche do not know. These become the "value spine" of the script — the reason someone would watch this video instead of a competitor's.
+
+**Efficiency rule:** Research and scripting combined should take under 30 minutes per video. At 4–6 videos/week, spending 2 hours per script is not viable. Use AI aggressively.
 
 ## Step 4. Generate 3 hook options
 
@@ -137,30 +151,39 @@ After the script, add a production section:
 
 **Target length:** [X–X minutes — based on niche research]
 **Estimated word count:** [X words at 130 words/minute speaking pace]
-**Talking head moments:** [list timestamps where face on camera is needed]
-**B-roll suggestions:** [list 4–6 specific visual suggestions with timestamps]
+**Visual change rate:** Every script section must cue a new visual — minimum 1 visual change every 4–5 seconds (YouTube Gemini flags static visuals as low-effort)
+**B-roll suggestions:** [list 4–6 specific visual suggestions with timestamps — from Pixabay]
 **On-screen text:** [list key phrases that should appear as text overlays]
 **Chapter markers:** [YouTube chapter timestamps based on script sections]
 **Thumbnail concept:** [brief description — run /yt-thumbnail-gen for full execution]
 **Title options:** [run /yt-title-optimizer for 10 variants]
+**ElevenLabs voice note:** [any specific pacing, emphasis, or tone directions for the voiceover]
 ```
 
-## Step 7. QA gate
+## Step 7. Anti-slop QA gate
 
-Score the script on these criteria before delivering:
+YouTube now uses Google Gemini to scan every video for low-effort AI content. Score the script on these criteria before delivering:
 
 | Criterion | Check |
 |---|---|
 | Hook does not open with "I" | Yes / No |
 | Hook under 75 words | Yes / No |
-| Value spine has 3+ specific facts | Yes / No |
+| Value spine has 3+ specific facts (not generic advice) | Yes / No |
 | Re-engagement hook at 30% mark | Yes / No |
 | No "welcome back" in first 45 seconds | Yes / No |
 | Subscribe ask appears once only | Yes / No |
-| Script matches voice.md tone | Yes / No |
+| Script matches competitor's proven structure (from yt-competitor-analysis.md) | Yes / No |
 | Script length matches niche research | Yes / No |
+| Each paragraph cues a different visual (no section runs 30+ seconds without new footage) | Yes / No |
+| Script has a unique angle — not a word-for-word copy of any competitor | Yes / No |
 
-Minimum 7/8 before delivery. Fix any failures and re-score.
+Minimum 9/10 before delivery. Fix any failures and re-score.
+
+**The Human Touch rule:** Before delivering, add one of these personal elements that AI alone wouldn't generate:
+- A specific data point from recent research (not generic "studies show")
+- A counterintuitive angle ("everyone says X but actually Y")
+- A concrete example with real numbers
+This is what separates monetizable content from content Gemini flags as slop.
 
 Save the final script to `scripts/[video-slug].md` in the project.
 

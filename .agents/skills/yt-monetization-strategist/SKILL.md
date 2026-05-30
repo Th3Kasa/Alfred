@@ -80,9 +80,24 @@ Extract:
 
 ## Step 3. Map the monetization timeline
 
-Calculate milestone dates based on the user's current status and niche research:
+Calculate milestone dates based on the user's current status and niche research.
 
-### Phase 1: Zero to YPP (Month 1 to 3 typically)
+**Reference benchmark — Leo Grundström's real path:**
+Leo started his "howtoai" channel while working in a supermarket and studying full-time. The channel made $0 for the first 3 months. He almost quit. Then it clicked. Within 2 years he built a $2M+ business. The lesson: the first 3 months are the hardest and most discouraging — this is normal and expected. Do not quit before month 4.
+
+### Phase 0: First 30 Videos (Weeks 1–6)
+
+This is the foundation phase. Before thinking about monetization, the goal is to post 30 videos. This is Leo's exact starting formula:
+- Post 4–6 videos per week (faceless channel) or 1–2/week (face on camera)
+- Each video should copy a proven topic from competitor research (from `yt-competitor-analysis.md`)
+- No monetization will come here — this is purely building the content library and learning the workflow
+
+**Why 30 videos first?**
+- YouTube's algorithm needs a body of content to understand what your channel is about
+- You will improve dramatically between video 1 and video 30
+- The watch hours and subscribers begin compounding after video 20–30 in most niches
+
+### Phase 1: Zero to YPP (Month 1 to 3 — posting 4–6/week)
 
 **YouTube Partner Program requirements:**
 - 1,000 subscribers
@@ -90,10 +105,12 @@ Calculate milestone dates based on the user's current status and niche research:
 - OR 10 million Shorts views in 90 days
 - AdSense account approved
 
-**Realistic timeline:**
-- Niche with 8–15 min videos at 1 upload/week: calculate hours needed
-- Formula: (4,000 hours needed − current hours) ÷ (average views per video × average watch time)
-- Be honest — it typically takes 3 to 12 months depending on upload frequency and quality
+**Realistic timeline at 4–6 videos/week:**
+- High-cadence posting is the fastest path to YPP watch hours
+- Formula: (4,000 hours needed) ÷ (average views per video × average watch %) = videos needed
+- At 4 videos/week: typically 2–4 months to hit YPP thresholds in a good niche
+- At 1 video/week: typically 6–18 months
+- Be honest — even high-cadence channels often see $0 for the first 2–3 months. This is normal.
 
 **What to do in Phase 1 (before YPP):**
 - Affiliate links in video descriptions (no follower requirement) — prioritise AU-based programs via Commission Factory or Awin AU first, then global programs
@@ -102,18 +119,36 @@ Calculate milestone dates based on the user's current status and niche research:
 - Services (use the channel as a portfolio)
 - **W-8BEN form:** Complete immediately in Google AdSense → Payments → Tax info. Required for 0% US withholding under the Australia–US tax treaty. Do this before the first cent is earned.
 
-### Phase 2: YPP Active (Month 3–6)
+### Phase 2: YPP Active — Scale to $5K/Month
 
 - AdSense income activates
 - Estimate monthly AdSense: (monthly views ÷ 1,000) × CPM
-- Begin approaching sponsors (nano-influencer rates apply at 1k–10k subs)
+- Keep posting at 4–6/week — do not slow down once monetized
+- Begin approaching sponsors (nano-influencer rates apply at 1K–10K subs)
+- Target: $5,000 AUD/month is the VA hire threshold
 
-### Phase 3: Scaling (Month 6–12+)
+### Phase 3: $5K/Month → Hire VAs (Leo's Exact Trigger Point)
 
+At $5,000 AUD/month in combined revenue (AdSense + affiliate):
+
+**Hire Virtual Assistants from Upwork:**
+- **Scriptwriter VA** — trained on your script template + competitor analysis, writes 3–5 scripts per week ($3–8/hour, Philippines/Indonesia)
+- **Video editor VA** — trained on the CapCut workflow, edits 1–2 videos per day ($4–10/hour)
+- **Researcher VA** — finds trending topics weekly using the competitor analysis method ($3–6/hour)
+- **Thumbnail VA** — creates thumbnails using your brand template ($3–8/hour)
+
+**Managing the VA team:**
+- Use Kloudboard (Leo's own tool, currently in beta — waitlist at kloudboard.com) or Notion/Trello as alternatives
+- Create SOPs (Standard Operating Procedures) for each role based on the skills in this division
+- Quality review every video before publish — this is now the human's primary role
+
+### Phase 4: Scaling (Month 6–12+)
+
+- Full VA team running production with minimal input from you
+- Add community/Discord (Leo's Automation Lab model — 20K members, significant revenue)
+- Launch a paid course or community once you have proof of concept
+- Consider launching a second channel in the same or adjacent niche
 - Sponsorship negotiation at channel-specific rates
-- Course or coaching product if applicable
-- Channel memberships
-- Super Thanks / Super Chat if doing live content
 
 ## Step 4. Build the prioritized revenue stack
 

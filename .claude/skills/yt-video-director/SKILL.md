@@ -88,22 +88,54 @@ Output in this format:
 
 ---
 
+## Leo Grundström's Exact CapCut Workflow (Recommended for Faceless Channels)
+
+This is the proven workflow for producing 4–6 videos per week with zero editing experience. Follow in this exact order:
+
+**Step 1 — Upload the voiceover first**
+Import the ElevenLabs voiceover MP3 to CapCut. This becomes the timeline foundation. Everything else syncs to the audio, not the other way around.
+
+**Step 2 — Drag in footage in script order**
+Pull stock clips from Pixabay in the order they appear in the script. Match visuals to what the script is describing at each moment. Do not use the same clip for more than 4–5 seconds.
+
+**Step 3 — Apply transitions to all clips at once**
+Select all clips → apply "Dissolve" transition uniformly. Do not use wipe or zoom transitions — they look low-budget. Consistent dissolves create a clean, professional feel.
+
+**Step 4 — Add overlay effects**
+Add light leaks or film grain overlay at 20–30% opacity. This adds visual texture and makes AI-generated footage look more produced. It also breaks the "flat" look that Gemini flags as static.
+
+**Step 5 — Background music**
+Add background music from CapCut's free library or Epidemic Sound. Match the mood to the content. Set audio level 15–20 dB below the voiceover — the viewer shouldn't notice the music, only feel it.
+
+**Step 6 — Auto-captions**
+Use CapCut's auto-caption feature. Review and fix errors. Bold key words. Captions increase retention by keeping viewers engaged when they're watching without sound.
+
+**Step 7 — Export**
+1080p, H.264. Target file size under 4GB.
+
+**Cadence target: 4–6 videos per week.** At this rate, one editor can batch-produce using this workflow in 2–3 hours per video. Prioritise this speed — a video posted consistently beats a perfect video posted occasionally.
+
+---
+
 ## Editing Pacing
 
 ### Cut Frequency
-- **Target:** X cuts per minute (based on niche research)
+- **Target:** 1 visual change every 4–5 seconds (minimum) — YouTube Gemini flags static visuals as low-effort
 - **Rule:** Cut on energy, not on clock. Every cut must serve a reason.
-- **Jump cuts:** [Allowed / Avoid] — explain why based on niche
+- **Jump cuts:** Allowed for faceless channels — the voiceover provides continuity
+- **Anti-slop rule:** If the same image appears on screen for more than 8 seconds, cut it
 
-### Talking Head Segments
-- Keep unbroken talking head runs under [X] seconds before inserting b-roll or text
+### Talking Head Segments (if face on camera)
+- Keep unbroken talking head runs under 30 seconds before inserting b-roll or text
 - Zoom in 5–10% at high-energy moments for emphasis
 - Use J-cuts (audio leads video) at section transitions
 
 ### B-Roll Strategy
-- **Ratio:** [X%] talking head / [X%] b-roll
-- **B-roll timing:** Insert at every new concept introduction
-- **Sources (zero cost):** Pexels, Pixabay, Unsplash video, screen recordings, product screenshots
+- **Primary source (zero cost):** Pixabay — search the specific concept from each script section
+- **Ratio for faceless channels:** 80–100% b-roll / 0–20% AI avatar or talking head
+- **Ratio for face-on-camera:** 60% talking head / 40% b-roll
+- **B-roll timing:** New clip every 4–5 seconds. No exceptions.
+- **Additional free sources:** Pexels, Unsplash video, screen recordings of tools/software
 - **Specific b-roll suggestions by script section:**
 
 | Script timestamp | B-roll suggestion |
@@ -163,6 +195,7 @@ Output in this format:
 
 ## Quality Checklist Before Export
 
+### Production Quality
 - [ ] Audio levels consistent throughout (target: -12 to -6 dB peaks)
 - [ ] No dead air longer than 0.5 seconds
 - [ ] All filler words (um, uh, like) removed
@@ -171,6 +204,18 @@ Output in this format:
 - [ ] End screen elements placed in last 20 seconds
 - [ ] Chapter timestamps written and ready to paste
 - [ ] Export: 1080p H.264, target file size under 4GB
+
+### Anti-Gemini-Demonetization Checklist (MANDATORY — 2026)
+YouTube now uses Google Gemini to scan every video. Channels posting low-effort AI content are being demonetized. Check all of these before uploading:
+
+- [ ] **No static visuals** — No image stays on screen for 8+ seconds without a cut or motion
+- [ ] **Visual variety** — At least 3 different visual sources used (e.g., stock footage + screen recording + text overlay)
+- [ ] **Branded channel feel** — Thumbnails, text overlays, and color scheme are consistent across videos
+- [ ] **Genuine value check** — Would a human editor be proud to put their name on this? If it's just text-to-speech over random stock footage, it will be flagged
+- [ ] **Overlay effects applied** — Light leak or film grain overlay added (breaks the "flat AI" look)
+- [ ] **Unique angle confirmed** — This video covers the topic from an angle that is different from the top 3 competitors (even slightly)
+- [ ] **Captions reviewed** — Auto-captions corrected for accuracy (Gemini can read them)
+- [ ] **Music not copyright-flagged** — Only use YouTube Audio Library, CapCut free library, or Pixabay Music
 
 ---
 

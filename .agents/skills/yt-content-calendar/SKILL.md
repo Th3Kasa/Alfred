@@ -31,9 +31,9 @@ Call AskUserQuestion:
     "header": "Upload frequency",
     "multiSelect": false,
     "options": [
-      {"label": "1 per week", "description": "Sustainable for solo creators — focus on quality"},
-      {"label": "2 per week", "description": "Doubles output — requires batch filming"},
-      {"label": "3+ per week", "description": "Aggressive growth — needs full production system"},
+      {"label": "4–6 per week (faceless AI channel)", "description": "Leo Grundström's recommended cadence for automation channels — AI handles production"},
+      {"label": "1–2 per week (face on camera)", "description": "Sustainable for face-on-camera solo creators — quality over quantity"},
+      {"label": "2–3 per week (hybrid)", "description": "Mix of face and faceless content"},
       {"label": "1 per week + Shorts daily", "description": "Main content + Shorts for algorithm reach"}
     ]
   },
@@ -61,17 +61,38 @@ Call AskUserQuestion:
 ]
 ```
 
-## Step 3. Generate the topic list
+## Step 3. Set the first milestone: 30 videos
+
+Before building a multi-month calendar, identify the "30 video milestone" as the primary target. This is Leo Grundström's foundation principle:
+
+**Why 30 videos:**
+- YouTube needs a content library to understand your channel and push it to the right audience
+- You will improve dramatically from video 1 to video 30 — don't judge the strategy on your first 10
+- The algorithm starts compounding after a body of work exists
+- At 4–6 videos/week: 30 videos = 5–7 weeks. This is fast.
+
+**30-video milestone calendar (for faceless channels at 4–6/week):**
+Plan the first 30 videos before anything else. These come directly from `yt-competitor-analysis.md` — specifically the "Recent High-Performers" list and "Priority topics to replicate." Do not invent topics. Copy what the algorithm is already pushing.
+
+## Step 4. Generate the full topic list
 
 For the full calendar duration, generate video ideas using this framework:
+
+### Topic sourcing — competitor-first method (Leo Grundström)
+
+**Primary source (80% of topics):** Pull directly from `yt-competitor-analysis.md` → the Recent High-Performers section. These are topics the algorithm is currently pushing in this niche. Cover them with your own angle.
+
+**Secondary source (20% of topics):** Web trend research — search for what's happening in the niche this week and next.
+
+Do not fill a calendar with invented topics. Every slot should have a proven demand signal backing it.
 
 ### Content pillar breakdown (apply to all slots)
 
 | Pillar | % of Content | Purpose |
 |--------|-------------|---------|
-| **Evergreen tutorials** | 40% | Searchable, long-tail traffic, stays relevant |
-| **Trending/timely** | 25% | Riding algorithm waves, news + commentary |
-| **Personal story / case study** | 20% | Trust-building, high watch time |
+| **Competitor-proven topics** | 60% | Copy what's already getting views — fastest path to traction |
+| **Evergreen tutorials** | 25% | Searchable, long-tail traffic, stays relevant |
+| **Trending/timely** | 15% | Riding algorithm waves — time-sensitive, schedule immediately |
 | **Collaboration / reaction** | 15% | Borrowing existing audiences |
 
 For each video slot, generate:
