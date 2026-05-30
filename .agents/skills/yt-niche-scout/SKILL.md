@@ -102,7 +102,7 @@ If the user has NexLev MCP configured, this is faster and more data-driven than 
 3. Ask Claude to find the top-performing videos in that niche
 4. Pick one topic from those results
 5. Run `/yt-script-writer` with that topic
-6. Generate voiceover with ElevenLabs
+6. Generate voiceover with Minimax
 7. Assemble in CapCut
 8. Publish
 
@@ -160,7 +160,7 @@ Search: `[niche] YouTube channel started [current year] growth`
 - Can this niche sustain 4–6 new videos per week without topic exhaustion?
 
 ### 4f. Faceless production viability
-- Can videos be produced with: AI script + ElevenLabs voiceover + Pixabay footage + CapCut editing?
+- Can videos be produced with: AI script + Minimax voiceover + Pixabay footage + CapCut editing?
 - Is a human face/expertise required, or can AI carry the content?
 - Faceless-viable niches: narration, tutorials, compilations, explainers, motivation, quizzes
 - Face-required niches: personal brand, vlogs, commentary, reaction — flag these clearly
@@ -176,7 +176,7 @@ Score every niche on these 6 dimensions (1 to 10 each):
 | **CPM** | Ad revenue potential (finance/tech = high, entertainment = low) |
 | **Affiliate upside** | Products/services to promote alongside AdSense |
 | **Creator fit** | Match to user's interests and whether it suits faceless production |
-| **Faceless viability** | Can AI script + ElevenLabs + Pixabay + CapCut produce this? |
+| **Faceless viability** | Can AI script + Minimax + Pixabay + CapCut produce this? |
 
 Total score = (Demand × 1.5) + Competition + CPM + Affiliate + Fit + Faceless
 

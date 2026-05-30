@@ -97,7 +97,7 @@ Output in this format:
 This is the proven workflow for producing 4–6 videos per week with zero editing experience. Follow in this exact order:
 
 **Step 1 — Upload the voiceover first**
-Import the ElevenLabs voiceover MP3 to CapCut. This becomes the timeline foundation. Everything else syncs to the audio, not the other way around.
+Import the Minimax voiceover MP3 to CapCut. This becomes the timeline foundation. Everything else syncs to the audio, not the other way around.
 
 **Step 2 — Drag in footage in script order**
 Pull stock clips from Pixabay in the order they appear in the script. Match visuals to what the script is describing at each moment. Do not use the same clip for more than 4–5 seconds.
@@ -267,7 +267,7 @@ If the user is editing without a professional editor:
 **AI editing shortcuts:**
 - **Descript** (freemium) — edit video by editing the transcript
 - **Adobe Podcast** (free) — remove background noise
-- **ElevenLabs** (freemium) — voice clone for re-recording flubs without re-filming
+- **Minimax** (freemium) — voice clone for re-recording flubs without re-filming
 
 ## Rules
 

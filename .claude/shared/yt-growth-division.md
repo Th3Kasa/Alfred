@@ -12,7 +12,7 @@
 
 Run a complete, high-quality YouTube channel operation with 95% automation. Every step from niche selection to a published video with optimized title and thumbnail is handled by the division. The human role is: approve decisions and publish.
 
-**Channel type:** Fully faceless — AI voice (ElevenLabs) + stock footage (Pixabay/CapCut). No filming required.
+**Channel type:** Fully faceless — AI voice (Minimax) + stock footage (Pixabay/CapCut). No filming required.
 
 **Evergreen-first principle:** Every piece of content is built to rank and drive views for 12+ months. No trending-news content. No date-specific hooks. Evergreen content compounds — it earns views while you sleep.
 
@@ -54,7 +54,7 @@ All agents run exclusively on free tools:
 | Google Gemini | AI-generated video clips (3 free/day) | Video Director | Free |
 | Canva | Thumbnail design (primary tool) | Thumbnail Gen | Free tier |
 | CapCut | Video editing with Leo's workflow | Video Director | Free |
-| ElevenLabs | Voiceover generation | Script → Production pipeline | Free tier |
+| Minimax | Voiceover generation | Script → Production pipeline | Free tier |
 | Pixabay | Stock footage and images | Video Director | Free |
 | NexLev MCP | AI-powered competitor analytics (optional) | Niche Scout | Free tier |
 
@@ -83,7 +83,7 @@ PRE-LAUNCH (before first video):
 
 Step 0: /yt-cold-start
   → Build 90-day Shorts warm-up plan. Channel setup checklist. Shorts content queue.
-  → Activate ElevenLabs Starter (~$11 AUD/month) — mandatory before first video.
+  → Activate Minimax Starter (~$11 AUD/month) — mandatory before first video.
   → Run Shorts-only for first 30 days. No long-form until 100 subscribers.
   Output: yt-cold-start-plan.md
 
@@ -123,7 +123,7 @@ Step 9: /yt-va-package
   → Complete 5-section production brief for the VA. Output: va-brief-[slug].md
 
 Step 10: VA executes the brief
-  → ElevenLabs voiceover → Pixabay b-roll → Canva thumbnail → CapCut edit → YouTube upload
+  → Minimax voiceover → Pixabay b-roll → Canva thumbnail → CapCut edit → YouTube upload
   → Human approves the final video only.
 
 ---
@@ -203,4 +203,4 @@ Then the standard workflow above applies.
 
 ## Installed: 2026-05-30 | Updated: 2026-05-30 (council review)
 
-Approved by Alfred. 13 agents operational. Zero-cost tool stack confirmed (ElevenLabs Starter ~$11 AUD/month mandatory from launch). Evergreen-first principle applied across all agents. Council review gaps resolved: cold-start authority building, community engagement, competition filter, Quick Loop mode, ElevenLabs character math.
+Approved by Alfred. 13 agents operational. Zero-cost tool stack confirmed (Minimax Starter ~$11 AUD/month mandatory from launch). Evergreen-first principle applied across all agents. Council review gaps resolved: cold-start authority building, community engagement, competition filter, Quick Loop mode, Minimax character math.

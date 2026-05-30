@@ -102,15 +102,13 @@ Each Short is produced in CapCut in under 15 minutes:
 
 1. Pick a single insight, fact, or quote from a top-performing competitor script (use `yt-competitor-analysis.md`)
 2. Write a 60-word script for it (one idea, one punch, one takeaway)
-3. Generate voiceover in ElevenLabs (60 words = ~450 characters — well under free tier limit per Short)
+3. Generate voiceover in Minimax (minimax.com → Text to Speech — no character cap, free credits)
 4. Add 3–5 stock clips from Pixabay (vertical/portrait clips preferred)
 5. Add auto-captions in CapCut (bold, white text, centred — Shorts are watched without sound frequently)
 6. Export at 1080×1920, 30fps
 7. Upload with the same title formula as long-form — the algorithm reads titles for Shorts too
 
-**ElevenLabs free tier math for Shorts:** 60 words ≈ 450 characters. At 10,000 free characters/month, you can generate approximately 22 Shorts per month before hitting the limit. At 1 Short/day (30 Shorts/month), you'll need to supplement:
-- Use TTSMaker.com (free, no character limit, 100+ voices) as overflow for Shorts beyond the ElevenLabs quota
-- Reserve ElevenLabs characters for long-form videos once they begin
+**Minimax voiceover for Shorts:** Go to minimax.com → Text to Speech. Paste the Short script (60 words ≈ 30 seconds). Minimax runs on a credit system with a generous free allocation — no hard monthly character cap. Generate as many Shorts as needed. If credits run out: TTSMaker.com (free, unlimited, 100+ voices) is a zero-friction backup for Shorts specifically.
 
 ### Shorts cadence
 

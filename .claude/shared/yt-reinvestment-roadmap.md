@@ -2,9 +2,9 @@
 
 > Owner: Alfred
 > Created: 2026-05-30
-> Updated: 2026-05-30 (council review — ElevenLabs moved to Tier 0 mandatory)
+> Updated: 2026-05-30 (council review — Minimax moved to Tier 0 mandatory)
 > Status: Pre-revenue (activate at Tier 1 trigger)
-> Rule: Never reinvest before the trigger income is stable for 2 consecutive months. Exception: ElevenLabs Starter is mandatory at launch — not revenue-gated.
+> Rule: Never reinvest before the trigger income is stable for 2 consecutive months. Exception: Minimax Starter is mandatory at launch — not revenue-gated.
 
 ---
 
@@ -25,14 +25,14 @@ The free stack gets you to monetisation and through the first $500/month. After 
 ## Tier 0 — Launch Stack (Start Day 1)
 
 **Income:** $0
-**Tool spend:** ~$11 AUD/month (ElevenLabs Starter — mandatory, not revenue-gated)
+**Tool spend:** ~$11 AUD/month (Minimax Starter — mandatory, not revenue-gated)
 **Status:** Activate before posting the first video
 
-The free stack is not sufficient for consistent posting. ElevenLabs' 10K character free tier covers one long-form script per month. At 4–6 videos/week, this breaks the system before it starts. ElevenLabs Starter is the only mandatory pre-revenue spend.
+The free stack is not sufficient for consistent posting. Minimax' 10K character free tier covers one long-form script per month. At 4–6 videos/week, this breaks the system before it starts. Minimax Starter is the only mandatory pre-revenue spend.
 
 ### Mandatory at launch
 
-**ElevenLabs Starter — ~$7 USD/month (~$11 AUD)**
+**Minimax Starter — ~$7 USD/month (~$11 AUD)**
 Upgrades from 10,000 to 30,000 characters/month. Adds commercial licence. Covers 3–4 full long-form scripts per month, plus 20+ Shorts.
 - The free tier bottleneck was identified as a critical system failure by council review — it breaks the posting cadence before any revenue is earned.
 - At 4–6 videos/week faceless: upgrade to Creator tier ($22 USD/month, ~$34 AUD, 100K chars) at Tier 2.
@@ -40,7 +40,7 @@ Upgrades from 10,000 to 30,000 characters/month. Adds commercial licence. Covers
 
 | Tool | Purpose | Cost |
 |------|---------|------|
-| ElevenLabs Starter | AI voiceover — 30K chars/month + commercial licence | ~$11 AUD/month |
+| Minimax Starter | AI voiceover — 30K chars/month + commercial licence | ~$11 AUD/month |
 | Pixabay | Stock footage + images | Free |
 | CapCut | Video editing | Free |
 | Canva free tier | Thumbnail design | Free |
@@ -49,7 +49,7 @@ Upgrades from 10,000 to 30,000 characters/month. Adds commercial licence. Covers
 | duckduckgo + open-websearch MCP | Research | Free |
 | Google Gemini video | AI clip generation (3/day) | Free |
 | YouTubeToTranscript.com | Bulk transcript extraction | Free |
-| TTSMaker.com | Overflow voiceover (free, unlimited) — supplement ElevenLabs for Shorts | Free |
+| TTSMaker.com | Overflow voiceover (free, unlimited) — supplement Minimax for Shorts | Free |
 
 **Remaining bottlenecks at this tier:**
 - Pixabay footage hunting is slow — VA has to search manually per clip (fixed at Tier 2 with Storyblocks).
@@ -78,7 +78,7 @@ Unlocks: brand kit (auto-apply channel colours to every thumbnail), background r
 - Brand kit eliminates the step where VA has to manually apply colours each time.
 - Activates in: yt-thumbnail-gen, yt-va-package (Canva brief becomes faster to execute)
 
-**Tier 1 total spend: ~$23–38 AUD/month** (ElevenLabs already running from Tier 0)
+**Tier 1 total spend: ~$23–38 AUD/month** (Minimax already running from Tier 0)
 **Tier 1 remaining budget for savings/reinvestment: ~$12–37/month**
 
 ### Alfred agent upgrades unlocked at Tier 1
@@ -153,7 +153,7 @@ Google's official YouTube API. At this stage: enables Alfred's Performance Loop 
 - Activates in: yt-performance-loop (automatic analytics pull), yt-outlier-hunter (programmatic competitor scan)
 - **This is the single biggest efficiency upgrade in the entire roadmap.** Manual analytics pasting disappears.
 
-**2. ElevenLabs Creator — ~$33 USD/month (~$52 AUD)**
+**2. Minimax Creator — ~$33 USD/month (~$52 AUD)**
 100,000 characters/month + instant voice cloning. At 4–6 videos/week with full narration scripts, Creator tier covers the full posting schedule comfortably.
 - Also unlocks: custom voice creation from a short sample (build a consistent channel voice that sounds human but is fully AI-generated)
 - Activates in: yt-va-package (Section 1 — voiceover brief updated with Creator-tier settings and custom voice ID)
@@ -250,7 +250,7 @@ Once the first channel is generating $5,000+/month and the VA team is running pr
 
 **Additional cost per new channel:**
 - New Claude Project: Free
-- New ElevenLabs custom voice: Free (within Creator plan)
+- New Minimax custom voice: Free (within Creator plan)
 - Additional TubeBuddy licence: ~$10 USD/month
 - Additional Storyblocks seat: Check plan terms — most plans allow multiple channels under one account
 - Additional VA (researcher + editor): ~$1,000–2,000 AUD/month
@@ -276,10 +276,10 @@ Before approving any new paid tool, run this check:
 
 | Tool | Monthly Cost (AUD) | Tier | Primary Benefit |
 |------|--------------------|----|-----------------|
-| ElevenLabs Starter | ~$11 | 0 (mandatory) | 30K chars + commercial licence — required from day 1 |
+| Minimax Starter | ~$11 | 0 (mandatory) | 30K chars + commercial licence — required from day 1 |
 | Keywords Everywhere | ~$1 (annual) | 1 | Real search volume data |
 | Canva Pro | ~$23 | 1 | Brand kit + background remover |
-| ElevenLabs Creator | ~$34 | 2 | 100K chars + custom voice (upgrade from Starter) |
+| Minimax Creator | ~$34 | 2 | 100K chars + custom voice (upgrade from Starter) |
 | Storyblocks All-Access | ~$34 | 2 | Unlimited stock footage |
 | Epidemic Sound | ~$31 | 2 | Copyright-safe music |
 | VidIQ Basic | ~$15 | 2 | Competitor keyword + velocity data |

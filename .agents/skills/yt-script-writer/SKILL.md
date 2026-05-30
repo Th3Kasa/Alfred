@@ -50,7 +50,7 @@ Before asking anything, silently check:
 - `yt-competitor-analysis.md` → hook formulas, title patterns, content gaps, proven script structures
 - `yt-content-calendar.md` → scheduled topic and any notes
 - `brand-kit.md` → channel tone and persona
-- `voice.md` → speaking style for ElevenLabs compatibility
+- `voice.md` → speaking style for Minimax voice compatibility
 - `about-me.md` → creator background
 
 If the Claude Project for this channel has competitor transcripts loaded (see Step 2), use those as the primary style reference.
@@ -385,7 +385,7 @@ If any check fails: fix it, then report which checks initially failed and what w
 **All 10 checks passed.**
 
 ## Production handoff notes
-- **ElevenLabs:** Pause at every `[PAUSE]` marker. Emphasise **bold** words with more weight.
+- **Minimax:** Use ellipsis (…) for pause beats and CAPS for emphasis — Minimax handles both naturally.
 - **B-roll:** Each `[VISUAL:]` tag becomes one row in the VA Package b-roll table.
 - **Chapter markers:** [List timestamps at each Point title in Explore]
 - **Thumbnail concept:** [1 sentence for /yt-thumbnail-gen]

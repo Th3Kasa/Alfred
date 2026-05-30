@@ -1,7 +1,7 @@
 ---
 name: yt-va-package
 description: >
-  Generates a complete, self-contained VA production brief for a single video — covering ElevenLabs voiceover formatting, exact Pixabay b-roll search terms with clip durations, Canva thumbnail brief, CapCut timeline guide, and a fully pre-filled upload checklist. The VA executes the entire production without asking a single question. Use when the user says "create VA brief", "production brief", "brief for the editor", "send to VA", or when a script has been written and needs to move into production. Reads the script file automatically. Zero cost.
+  Generates a complete, self-contained VA production brief for a single video — covering Minimax voiceover formatting, exact Pixabay b-roll search terms with clip durations, Canva thumbnail brief, CapCut timeline guide, and a fully pre-filled upload checklist. The VA executes the entire production without asking a single question. Use when the user says "create VA brief", "production brief", "brief for the editor", "send to VA", or when a script has been written and needs to move into production. Reads the script file automatically. Zero cost.
 origin: alfred-yt-division
 ---
 
@@ -28,63 +28,38 @@ Also check:
 - `voice.md` → tone and persona
 - `yt-competitor-analysis.md` → thumbnail formula for this niche
 
-## Step 2. Generate the ElevenLabs Voiceover Brief
+## Step 2. Generate the Minimax Voiceover Brief
 
-The voiceover is the timeline foundation of the video. This brief formats the script so a VA can paste it into ElevenLabs and produce the audio without any editing judgment.
+The voiceover is the timeline foundation of the video. This brief formats the script so a VA can paste it into Minimax and produce the audio without any editing judgment.
 
-**Character budget check (run before generating the brief):**
+**Platform:** minimax.com → Text to Speech (web interface, no API key needed for manual use)
+**Backup:** TTSMaker.com (free, unlimited, 100+ voices) — use if Minimax credits run low
 
-Count the script word count. Multiply by 6 to estimate character count (average word = ~6 characters including spaces).
-
-| Script words | Est. characters | Free tier status |
-|---|---|---|
-| Under 1,500 words | Under 9,000 chars | ✓ Safe on free tier (10K limit) |
-| 1,500–2,000 words | 9,000–12,000 chars | ⚠ May exceed free tier |
-| Over 2,000 words | Over 12,000 chars | ✗ Exceeds free tier — use workaround below |
-
-**If the script exceeds the free tier (most long-form scripts will):**
-
-Choose one workaround — list in order of preference:
-
-**Workaround 1 — ElevenLabs Starter (Recommended — ~$11 AUD/month)**
-30,000 characters/month + commercial licence. Covers 3–4 full long-form scripts per month. This is the single best first investment for the channel — prioritise before any other paid tool. At the first $50 of channel revenue, activate this.
-
-**Workaround 2 — Priority queue (free)**
-Generate only the high-value sections in ElevenLabs (Attention hook + all Explore Twists + X-change). Generate the lower-intensity narration sections (Proof section, transitions between Explore points) in TTSMaker.com (free, unlimited, 100+ voices). Splice the two audio sources in CapCut. Match the voice as closely as possible by selecting the same gender/accent profile in TTSMaker.
-
-**Workaround 3 — TTSMaker.com as primary (free, unlimited)**
-Use TTSMaker.com for the entire script. Voice quality is slightly below ElevenLabs but has no character limit. Best voices: "Neural" voices with similar tone to your ElevenLabs selection. This is acceptable for the first 10 videos while revenue builds.
-
-**Workaround 4 — Batch across multiple free accounts (free)**
-ElevenLabs allows one free account per email address. Generate the first half of the script on account A, the second half on account B. Splice in CapCut. Ensure the same voice is selected on both accounts for consistency.
-
-Include the chosen workaround in Section 1 of the brief so the VA knows exactly what to do.
+Minimax has no hard monthly character cap in the way ElevenLabs did. It operates on a credit system with a generous free allocation. There is no character-count anxiety — generate as many videos as needed.
 
 ```markdown
 # BRIEF SECTION 1: VOICEOVER
 
-## Character Budget
-- Script word count: [X words]
-- Estimated characters: [X × 6 = Y chars]
-- Free tier status: [Safe / May exceed / Exceeds]
-- Workaround if needed: [Workaround 1 / 2 / 3 / 4 — with specific instructions]
+## Minimax Settings
+- Platform: minimax.com → Text to Speech
+- Voice: [Select based on niche tone]
+  - Education/documentary/stoic: male, deep, measured — try "Friendly Person" or "Deep Voice Male"
+  - Motivational/self-help: male or female, warm and clear — try "Calm Woman" or "Wise Man"
+  - Entertainment/lists: upbeat, energetic — try "Energetic Male" or "Lively Female"
+- Speed: 0.95 (slightly slower than default — better for narration pacing)
+- Pitch: 0 (default — do not adjust unless the voice sounds unnatural)
+- Emotion: Neutral (default — Minimax handles natural variation automatically)
 
-## ElevenLabs Settings
-- Voice: [AI voice name — choose one suited to the niche tone]
-  - Education/tutorial niches: calm, clear, authoritative
-  - Motivational/stoic: deep, measured, deliberate
-  - Entertainment/lists: upbeat, energetic, engaging
-- Stability: 50%
-- Clarity + Similarity Boost: 85%
-- Style Exaggeration: 35%
+**Voice selection rule:** Generate a 30-second test clip of the hook before committing. If it sounds robotic or mispronounces the niche's key terms, try the next voice down the list. Never switch voices mid-project — pick one and lock it.
 
-## Script — Formatted for ElevenLabs
+## Script — Formatted for Minimax
 
 [Full script from scripts/[filename].md, reformatted with these markers:]
-- [PAUSE] = 0.5 second pause (use after section transitions)
-- [PAUSE-LONG] = 1.0 second pause (use after the hook statement)
-- **bold** = emphasis (ElevenLabs reads this with more weight)
-- — = natural pause beat (use mid-sentence for rhythm)
+- , (comma) = brief natural pause — use liberally for rhythm
+- . (period) = standard sentence pause
+- … (ellipsis) = extended pause beat — use after the hook statement and major transitions
+- CAPS = emphasis — Minimax increases stress on all-caps words naturally
+- — = mid-sentence pause beat for rhythm
 
 [Paste entire formatted script here]
 
@@ -94,10 +69,10 @@ Upload to: project `audio/` folder
 
 ## Quality check before next step
 - [ ] Voiceover sounds natural, not robotic
-- [ ] No mispronounced words
+- [ ] No mispronounced words (if any: re-type the word phonetically in the script — e.g., "Stoik" for "Stoic" if needed)
 - [ ] Pacing feels right for the niche (not too fast, not too slow)
 - [ ] No background hiss or artefacts
-If any check fails: regenerate the problem section only and splice in CapCut
+If any check fails: regenerate only the problem paragraph and splice it in using CapCut
 ```
 
 ## Step 3. Generate the B-Roll Brief
