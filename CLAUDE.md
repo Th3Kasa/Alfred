@@ -6,15 +6,15 @@ Alfred is a multi-agent AI team configuration. Each agent owns a domain; skills 
 
 ## Agents & ownership
 
-| Agent | Owns |
-|-------|------|
-| `ui-craft` | All design, frontend, and visual work |
-| `copywriter` | Content, social media, brand voice |
-| `business-analyst` | Product strategy, research, data |
-| `tech-curator` | Skill vetting, code quality, dev tooling |
-| `saas-architect` | Systems design and infra |
-| `ai-automation` | AI pipelines, evals, tracing |
-| `integrations` | Third-party APIs, file I/O, productivity |
+| Agent | Department | Owns |
+|-------|------------|------|
+| `eng-product` | Engineering & Product Development | Software engineering, product management, UX/UI design, AI pipelines, dev tooling |
+| `sales-marketing` | Sales & Marketing | Growth marketing, enterprise sales, business development, brand voice, content |
+| `customer-success` | Customer Success & Support | User adoption, SaaS technical support, client retention, onboarding |
+| `ops-finance` | Operations & Finance | Financial reporting, R&D tax incentive compliance, SaaS metrics analysis, data |
+| `people-culture` | People & Culture (HR) | Tech recruitment, workforce retention, employee benefits |
+| `it-infosec` | IT & Information Security | Cloud infrastructure, cybersecurity, system access controls, third-party APIs |
+| `legal-compliance` | Legal & Compliance | Australian Consumer Law (ACL), Privacy Act (1988), GDPR, corporate governance |
 
 ## Skill install policy
 
@@ -24,7 +24,7 @@ New skills must pass the trust gate before installation:
 2. ≥ 500 stars (waiver requires Alfred approval + documented reason)
 3. Compatible license: MIT / Apache 2.0 / CC BY 4.0 / ELv2
 4. No mandatory paid external API keys
-5. tech-curator review → Alfred approval → add to plugin-registry.md
+5. eng-product review → Alfred approval → add to plugin-registry.md
 
 Document every install, reject, and deferral in `.claude/shared/plugin-registry.md`.
 

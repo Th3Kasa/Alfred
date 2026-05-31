@@ -1,6 +1,6 @@
 # Plugin Registry — Alfred's Team
 
-> Managed by Alfred. All additions require tech-curator vetting + Alfred approval.
+> Managed by Alfred. All additions require eng-product vetting + Alfred approval.
 > Last updated: 2026-05-30
 
 ---
@@ -39,20 +39,20 @@
 
 | Skill | Source | Stars | License | Category | Agent Owner | Notes |
 |-------|--------|-------|---------|----------|-------------|-------|
-| frontend-design | anthropics/skills | 143k | Apache 2.0 | Design | ui-craft | Anthropic-maintained |
-| canvas-design | anthropics/skills | 143k | Apache 2.0 | Design | ui-craft | HTML5 Canvas + custom fonts |
-| skill.color-expert | meodai/skill.color-expert | 475 | CC BY 4.0 | Design | ui-craft | Attribution to meodai required on use |
-| nothing-design-skill | dominikmartn/nothing-design-skill | 2,400 | MIT | Design | ui-craft | Nothing OS aesthetic |
-| reels-scripting | charlie947/social-media-skills | 1,200 | MIT | Social | copywriter | Instagram Reels scripts |
-| post-scorer | charlie947/social-media-skills | 1,200 | MIT | Social | copywriter | Post quality scoring |
-| voice-builder | charlie947/social-media-skills | 1,200 | MIT | Social | copywriter | Brand voice profiling |
-| youtube-thumbnail | charlie947/social-media-skills | 1,200 | MIT | Social | copywriter | YouTube thumbnail design |
-| hook-generator | charlie947/social-media-skills | 1,200 | MIT | Social | copywriter | Social media hooks |
-| marketingskills | coreyhaines31/marketingskills | 30,900 | MIT | Marketing | copywriter | 50+ CRO/copy/SEO/ads skills |
-| competitive-ads-extractor | ComposioHQ/awesome-claude-skills | 62,300 | Apache 2.0 | Marketing | copywriter | Competitor ad analysis |
-| pm-skills | phuryn/pm-skills | 11,700 | MIT | Product | business-analyst | 65+ PM skills |
-| Skill_Seekers | yusufkaraaslan/Skill_Seekers | 13,800 | MIT | Dev | tech-curator | Converts docs/repos into skills |
-| academic-research-skills | imbad0202/academic-research-skills | 23,300 | CC BY-NC 4.0 | Research | business-analyst | NON-COMMERCIAL USE ONLY |
+| frontend-design | anthropics/skills | 143k | Apache 2.0 | Design | eng-product | Anthropic-maintained |
+| canvas-design | anthropics/skills | 143k | Apache 2.0 | Design | eng-product | HTML5 Canvas + custom fonts |
+| skill.color-expert | meodai/skill.color-expert | 475 | CC BY 4.0 | Design | eng-product | Attribution to meodai required on use |
+| nothing-design-skill | dominikmartn/nothing-design-skill | 2,400 | MIT | Design | eng-product | Nothing OS aesthetic |
+| reels-scripting | charlie947/social-media-skills | 1,200 | MIT | Social | sales-marketing | Instagram Reels scripts |
+| post-scorer | charlie947/social-media-skills | 1,200 | MIT | Social | sales-marketing | Post quality scoring |
+| voice-builder | charlie947/social-media-skills | 1,200 | MIT | Social | sales-marketing | Brand voice profiling |
+| youtube-thumbnail | charlie947/social-media-skills | 1,200 | MIT | Social | sales-marketing | YouTube thumbnail design |
+| hook-generator | charlie947/social-media-skills | 1,200 | MIT | Social | sales-marketing | Social media hooks |
+| marketingskills | coreyhaines31/marketingskills | 30,900 | MIT | Marketing | sales-marketing | 50+ CRO/copy/SEO/ads skills |
+| competitive-ads-extractor | ComposioHQ/awesome-claude-skills | 62,300 | Apache 2.0 | Marketing | sales-marketing | Competitor ad analysis |
+| pm-skills | phuryn/pm-skills | 11,700 | MIT | Product | ops-finance | 65+ PM skills |
+| Skill_Seekers | yusufkaraaslan/Skill_Seekers | 13,800 | MIT | Dev | eng-product | Converts docs/repos into skills |
+| academic-research-skills | imbad0202/academic-research-skills | 23,300 | CC BY-NC 4.0 | Research | ops-finance | NON-COMMERCIAL USE ONLY |
 
 #### REJECTED
 
@@ -77,17 +77,17 @@
 
 | claude-mem | thedotmack/claude-mem | 79,400 | Apache 2.0 | Memory | Alfred | Passive capture only — injection DISABLED (`CONTEXT_OBSERVATIONS=0`), haiku model, noisy tools skipped. Semantic search layer only. |
 | context-mode | mksglu/context-mode | 15,900 | ELv2 | Context | Alfred + all agents | MCP server — routes tool output to SQLite, prevents inline bloat. ELv2 approved for internal use. |
-| excel-mcp | negokaz/excel-mcp-server | ~2,800 | MIT | Productivity | integrations | Read/write Excel files without Microsoft Excel. MCP server via npx. |
-| phoenix | Arize-ai/phoenix | 9,900 | ELv2 | Observability | ai-automation | AI tracing/eval platform. Local use only (http://localhost:6006). Start with: pip install arize-phoenix && phoenix serve |
+| excel-mcp | negokaz/excel-mcp-server | ~2,800 | MIT | Productivity | it-infosec | Read/write Excel files without Microsoft Excel. MCP server via npx. |
+| phoenix | Arize-ai/phoenix | 9,900 | ELv2 | Observability | eng-product | AI tracing/eval platform. Local use only (http://localhost:6006). Start with: pip install arize-phoenix && phoenix serve |
 | duckduckgo | nickclyde/duckduckgo-mcp | 1,200 | MIT | Search | all agents | Free web search, no API key |
-| pollinations | pollinations/model-context-protocol | 4,600 | MIT | Media | ui-craft | Free AI image/text/audio generation, no key |
+| pollinations | pollinations/model-context-protocol | 4,600 | MIT | Media | eng-product | Free AI image/text/audio generation, no key |
 | markdownify | iflow-mcp/markdownify | ~500 | MIT | Utility | all agents | Convert PDF/HTML/files to Markdown |
-| excalidraw | excalidraw/mcp | 4,600 | MIT | Design | saas-architect | Hand-drawn diagrams via MCP |
-| antv-chart | antvis/mcp-server-chart | 4,100 | MIT | Data | business-analyst | AntV data chart generation |
+| excalidraw | excalidraw/mcp | 4,600 | MIT | Design | eng-product | Hand-drawn diagrams via MCP |
+| antv-chart | antvis/mcp-server-chart | 4,100 | MIT | Data | ops-finance | AntV data chart generation |
 | open-websearch | Aas-ee/open-websearch | 1,300 | MIT | Search | all agents | Multi-engine search (Bing/DDG/Brave/Exa), no key |
-| youtube-transcript | jdepoix/youtube-transcript-mcp | 7,600 | MIT | Research | copywriter | YouTube transcript retrieval, no API key |
-| arxiv | blazickjp/arxiv-mcp | 2,800 | Apache 2.0 | Research | business-analyst | Academic paper search, no key |
-| shadcn-ui-mcp | jpisnice/shadcn-ui-mcp-server | 2,800 | MIT | Design | ui-craft | shadcn/ui v4 component generation and docs. MCP server via npx. |
+| youtube-transcript | jdepoix/youtube-transcript-mcp | 7,600 | MIT | Research | sales-marketing | YouTube transcript retrieval, no API key |
+| arxiv | blazickjp/arxiv-mcp | 2,800 | Apache 2.0 | Research | ops-finance | Academic paper search, no key |
+| shadcn-ui-mcp | jpisnice/shadcn-ui-mcp-server | 2,800 | MIT | Design | eng-product | shadcn/ui v4 component generation and docs. MCP server via npx. |
 
 #### DEFERRED — Awaiting Action
 
@@ -98,7 +98,7 @@
 | GPT-Image2-Skill | 2,500 | User chose no preference | Skip for now |
 | claude-code-video-toolkit | 1,300 | Requires Modal/RunPod GPU | User chose no preference — skip |
 | dev-browser | 6,200 | Overlap with agent-browser | User chose no preference — skip |
-| Generative-Media-Skills | 3,300 | muapi-cli dependency unvetted | Requires separate tech-curator vetting of muapi-cli |
+| Generative-Media-Skills | 3,300 | muapi-cli dependency unvetted | Requires separate eng-product vetting of muapi-cli |
 
 ---
 
@@ -145,7 +145,8 @@
 
 | Date | Action | Skill | Decided By |
 |------|--------|-------|------------|
-| 2026-05-29 | BATCH VET | 33 items | tech-curator + Alfred |
+| 2026-05-31 | RESTRUCTURE | Core agents reorganised into 7 company departments (eng-product, sales-marketing, customer-success, ops-finance, people-culture, it-infosec, legal-compliance) | Alfred |
+| 2026-05-29 | BATCH VET | 33 items | eng-product + Alfred |
 | 2026-05-29 | INSTALL | 14 skills | Alfred |
 | 2026-05-29 | REJECT | 6 skills | Alfred (trust threshold) |
 | 2026-05-29 | NOT A SKILL | 5 items | Alfred |
