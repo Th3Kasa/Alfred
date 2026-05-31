@@ -1,7 +1,7 @@
 # Plugin Registry — Alfred's Team
 
 > Managed by Alfred. All additions require tech-curator vetting + Alfred approval.
-> Last updated: 2026-05-29
+> Last updated: 2026-05-30
 
 ---
 
@@ -102,6 +102,45 @@
 
 ---
 
+---
+
+## YouTube Growth Division — 2026-05-30
+
+> Department overview: `.claude/shared/yt-growth-division.md`
+> Cost: Zero — all tools are free, no API keys required
+> Status: Active
+
+### Installed Skills
+
+| Skill ID | Category | Agent Role | Notes |
+|----------|----------|------------|-------|
+| yt-niche-scout | YouTube / Research | Niche Scout | Research profitable niches with data-backed scoring |
+| yt-competitor-analyst | YouTube / Research | Competitor Analyst | Deep-dives channels via transcripts + search |
+| yt-script-writer | YouTube / Content | Script Writer | Full scripts with hooks, retention tactics, CTAs |
+| yt-video-director | YouTube / Production | Video Director | Production briefs, editing pacing, video length research |
+| yt-title-optimizer | YouTube / Content | Title Optimizer | 10 scored title variants per video |
+| yt-thumbnail-gen | YouTube / Design | Thumbnail Gen | Free thumbnail generation via Pollinations |
+| yt-monetization-strategist | YouTube / Growth | Monetization Strategist | YPP roadmap, affiliates, sponsors, products |
+| yt-content-calendar | YouTube / Operations | Content Calendar | 30/90-day pipeline with topics, deadlines, upload schedule |
+| yt-outlier-hunter | YouTube / Research | Outlier Hunter | Viral topic discovery via Attack Score + Winnable Score — automated weekly scan |
+| yt-va-package | YouTube / Production | VA Package | Complete 5-section VA production brief — voiceover, b-roll, Canva, CapCut, upload |
+| yt-performance-loop | YouTube / Analytics | Performance Loop | Weekly analytics review — Full Loop + Quick Loop modes, pattern extraction, calendar update |
+| yt-cold-start | YouTube / Growth | Cold Start | 90-day Shorts-first authority building — breaks YouTube's new-channel suppression |
+| yt-community-manager | YouTube / Engagement | Community Manager | Weekly comment management, pinned comment, 6-hour reply window, Community tab posts |
+
+### Zero-Cost Tool Stack Used
+
+| Tool | Purpose |
+|------|---------|
+| `youtube-transcript` MCP | Pull full transcripts of competitor videos |
+| `duckduckgo` MCP | Free web search for research |
+| `open-websearch` MCP | Multi-engine trend and keyword research |
+| `pollinations` MCP | Free AI image generation for thumbnails |
+| `agent-browser` skill | Scrape channel pages |
+| `markdownify` MCP | Convert web pages to markdown |
+
+---
+
 ## Approval Log
 
 | Date | Action | Skill | Decided By |
@@ -113,6 +152,15 @@
 | 2026-05-29 | DEFERRED | 6 items | Alfred (conditions unmet) |
 | 2026-05-29 | INSTALL | excel-mcp, shadcn-ui-mcp | Alfred (batch 2 clean approvals) |
 | 2026-05-29 | INSTALL | duckduckgo, pollinations, markdownify, excalidraw, antv-chart, open-websearch, youtube-transcript, arxiv | Alfred (batch 3 — free no-key) |
+| 2026-05-30 | NEW DEPARTMENT | YouTube Growth Division — 8 skills | Alfred (zero-cost, internal build) |
+| 2026-05-30 | INSTALL | yt-niche-scout, yt-competitor-analyst, yt-script-writer, yt-video-director, yt-title-optimizer, yt-thumbnail-gen, yt-monetization-strategist, yt-content-calendar | Alfred (YouTube Growth Division) |
+| 2026-05-30 | INSTALL | yt-outlier-hunter, yt-va-package, yt-performance-loop | Alfred (YT Division — Phase 2 agents) |
+| 2026-05-30 | UPDATE | yt-script-writer | Alfred (APEX framework rewrite — evergreen-first, 3T structure, 10-point quality gate) |
+| 2026-05-30 | INSTALL | yt-cold-start, yt-community-manager | Alfred (YT Division — council gap fixes: cold-start authority building + community engagement) |
+| 2026-05-30 | UPDATE | yt-outlier-hunter | Alfred (Competition Filter + Winnable Score added — council fix for zero-authority channel problem) |
+| 2026-05-30 | UPDATE | yt-va-package | Alfred (Minimax character budget check + 4 workarounds added — council fix for free tier cap) |
+| 2026-05-30 | UPDATE | yt-performance-loop | Alfred (Quick Loop mode added — 5-min fallback prevents manual paste fatigue failure) |
+| 2026-05-30 | UPDATE | yt-reinvestment-roadmap | Alfred (Minimax Starter moved to Tier 0 mandatory — council identified as pre-revenue requirement) |
 | 2026-05-29 | DEFERRED | firecrawl (free key req), figma-context (free key req), n8n-mcp (n8n credentials), better-icons (no npm pkg), designlang (CLI only, not MCP) | Alfred (needs credentials or not an MCP server) |
 | 2026-05-29 | DEFERRED | graphiti (needs Docker+Neo4j infra), apify-mcp (needs APIFY_TOKEN) | Alfred (user setup required) |
 | 2026-05-29 | DEFERRED | trigger.dev (SSE idle-timeout bug), trendradar (GPL-3.0 review), phoenix/arize (ELv2 review) | Alfred (pending decisions) |
