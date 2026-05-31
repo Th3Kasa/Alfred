@@ -6,15 +6,15 @@ Alfred is a multi-agent AI system built on [Claude Code](https://code.claude.com
 
 ## Team
 
-| Agent | Domain | Example tasks |
-|-------|--------|---------------|
-| **ui-craft** | Design & frontend | UI components, design systems, visual polish |
-| **copywriter** | Content & social | Ads, reels scripts, brand voice, hooks |
-| **business-analyst** | Product & research | PM frameworks, academic research, data charts |
-| **tech-curator** | Dev tooling | Skill vetting, code quality, architecture |
-| **saas-architect** | Systems design | Diagrams, infra planning, SaaS patterns |
-| **ai-automation** | AI pipelines | Tracing, evals, AI workflow orchestration |
-| **integrations** | Productivity | Excel, external APIs, file conversion |
+| Agent | Department | Example tasks |
+|-------|------------|---------------|
+| **eng-product** | Engineering & Product Development | Software builds, product roadmap, UX/UI design, AI pipelines, dev tooling, infra planning |
+| **sales-marketing** | Sales & Marketing | Growth campaigns, ads, brand voice, reels scripts, hooks, business development |
+| **customer-success** | Customer Success & Support | User onboarding, SaaS troubleshooting, retention playbooks, adoption workflows |
+| **ops-finance** | Operations & Finance | Financial reporting, R&D tax compliance, SaaS metrics, data charts, Excel |
+| **people-culture** | People & Culture (HR) | Tech recruitment briefs, retention strategies, employee benefits research |
+| **it-infosec** | IT & Information Security | Cloud infrastructure, cybersecurity reviews, system access controls, external APIs |
+| **legal-compliance** | Legal & Compliance | ACL, Privacy Act (1988), GDPR, NDAs, corporate governance |
 
 ---
 
