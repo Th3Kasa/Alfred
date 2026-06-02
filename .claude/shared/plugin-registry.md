@@ -1,7 +1,7 @@
 # Plugin Registry — Alfred's Team
 
 > Managed by Alfred. All additions require eng-product vetting + Alfred approval.
-> Last updated: 2026-05-30
+> Last updated: 2026-06-02
 
 ---
 
@@ -141,6 +141,33 @@
 
 ---
 
+## Batch Install — 2026-06-02 (alirezarezvani/claude-skills)
+
+**Source:** https://github.com/alirezarezvani/claude-skills  
+**Stars:** 16,900 | **License:** MIT | **API keys required:** None  
+**Skills installed:** 306 new (19 already present, skipped)
+
+| Bundle | Skills Installed | Agent Owner |
+|--------|-----------------|-------------|
+| `engineering-team/` | adversarial-reviewer, ai-security, aws-solution-architect, azure-cloud-architect, cloud-security, code-reviewer, email-template-builder, engineering-skills, epic-design, gcp-cloud-architect, incident-commander, incident-response, ms365-tenant-manager, red-team, security-pen-testing, senior-architect, senior-backend, senior-computer-vision, senior-data-engineer, senior-data-scientist, senior-devops, senior-frontend, senior-fullstack, senior-ml-engineer, senior-prompt-engineer, senior-qa, senior-secops, senior-security, stripe-integration-expert, tdd-guide, tech-stack-evaluator, threat-detection + extended skills | `eng-product` + `it-infosec` |
+| `engineering/` | agent-designer, agent-workflow-designer, api-design-reviewer, api-test-suite-builder, browser-automation, changelog-generator, chaos-engineering, ci-cd-pipeline-builder, codebase-onboarding, command-guide, database-designer, database-schema-designer, dependency-auditor, engineering-advanced-skills, env-secrets-manager, feature-flags-architect, focused-fix, full-page-screenshot, git-worktree-manager, interview-system-designer, kubernetes-operator, mcp-server-builder, migration-architect, monorepo-navigator, observability-designer, performance-profiler, pr-review-expert, rag-architect, release-manager, runbook-generator, secrets-vault-manager, self-eval, ship-gate, skill-security-auditor, skill-tester, slo-architect, spec-driven-workflow, sql-database-assistant, tc-tracker, tech-debt-tracker + extended | `eng-product` |
+| `product-team/` | competitive-teardown, experiment-designer, landing-page-generator, product-analytics, product-discovery, product-manager-toolkit, product-skills, product-strategist, roadmap-communicator, saas-scaffolder, spec-to-repo, ui-design-system, ux-researcher-designer + extended | `eng-product` |
+| `marketing-skill/` | ab-test-setup, ad-creative, aeo, ai-seo, analytics-tracking, app-store-optimization, brand-guidelines, campaign-analytics, churn-prevention, cold-email, competitor-alternatives, content-creator, content-humanizer, content-production, content-strategy, copy-editing, copywriting, email-sequence, form-cro, free-tool-strategy, launch-strategy, marketing-context, marketing-demand-acquisition, marketing-ops, marketing-psychology, marketing-skills, marketing-strategy-pmm, onboarding-cro, page-cro, paid-ads, paywall-upgrade-cro, popup-cro, pricing-strategy, programmatic-seo, prompt-engineer-toolkit, referral-program, schema-markup, signup-flow-cro, social-content, social-media-analyzer, social-media-manager, x-twitter-growth + extended | `sales-marketing` |
+| `c-level-advisor/` | agent-protocol, board-deck-builder, board-meeting, c-level-skills, ceo-advisor, cfo-advisor, change-management, chief-ai-officer-advisor, chief-customer-officer-advisor, chief-data-officer-advisor, chief-of-staff, chro-advisor, ciso-advisor, cmo-advisor, company-os, competitive-intel, context-engine, coo-advisor, cpo-advisor, cro-advisor, cs-onboard, cto-advisor, culture-architect, decision-logger, founder-coach, general-counsel-advisor, internal-narrative, intl-expansion, ma-playbook, org-health-diagnostic, scenario-war-room, strategic-alignment, vpe-advisor + boardroom council skills | All agents / Alfred |
+| `compliance-os/` | ai-act-readiness, aims-audit, compliance-os, compliance-readiness, fda-qsr-audit-prep, gdpr-audit-prep, iso13485-audit-prep, iso27001-audit-prep, soc2-audit-prep | `legal-compliance` + `it-infosec` |
+| `ra-qm-team/` | capa-officer, eu-ai-act-specialist, fda-consultant-specialist, gdpr-dsgvo-expert, information-security-manager-iso27001, isms-audit-expert, iso42001-specialist, mdr-745-specialist, qms-audit-expert, quality-documentation-manager, quality-manager-qmr, quality-manager-qms-iso13485, ra-qm-skills, regulatory-affairs-head, risk-management-specialist, soc2-compliance | `legal-compliance` + `it-infosec` |
+| `finance/` | finance-skills, financial-analyst, saas-metrics-coach | `ops-finance` |
+| `business-growth/` | business-growth-skills, contract-and-proposal-writer, customer-success-manager, revenue-operations, sales-engineer | `sales-marketing` + `customer-success` |
+| `business-operations/` | business-operations-skills, capacity-planner, internal-comms, knowledge-ops, process-mapper, procurement-optimizer, vendor-management | `ops-finance` |
+| `commercial/` | channel-economics, commercial-forecaster, commercial-policy, commercial-skills, deal-desk, partnerships-architect, pricing-strategist, rfp-responder | `sales-marketing` + `ops-finance` |
+| `research-ops/` | clinical-research, market-research, product-research, research-finance, research-ops-skills | `ops-finance` + `eng-product` |
+| `project-management/` | atlassian-admin, atlassian-templates, confluence-expert, jira-expert, meeting-analyzer, pm-skills, scrum-master, senior-pm, team-communications | `eng-product` + `ops-finance` |
+| `productivity/` | andreessen, capture, handoff, reflect + inbox/email skills | All agents |
+| `research/` | litreview, dossier, grants, patent, pulse, research, syllabus, notebooklm | `ops-finance` + `eng-product` |
+| `markdown-html/` | design-system, markdown-html-orchestrator | `eng-product` |
+
+---
+
 ## Approval Log
 
 | Date | Action | Skill | Decided By |
@@ -165,3 +192,4 @@
 | 2026-05-29 | DEFERRED | firecrawl (free key req), figma-context (free key req), n8n-mcp (n8n credentials), better-icons (no npm pkg), designlang (CLI only, not MCP) | Alfred (needs credentials or not an MCP server) |
 | 2026-05-29 | DEFERRED | graphiti (needs Docker+Neo4j infra), apify-mcp (needs APIFY_TOKEN) | Alfred (user setup required) |
 | 2026-05-29 | DEFERRED | trigger.dev (SSE idle-timeout bug), trendradar (GPL-3.0 review), phoenix/arize (ELv2 review) | Alfred (pending decisions) |
+| 2026-06-02 | INSTALL | alirezarezvani/claude-skills — 306 skills across 16 bundles | Alfred (trust gate passed: 16.9k stars, MIT, no API keys) |
