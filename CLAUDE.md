@@ -1,42 +1,18 @@
 # Alfred — Claude Code Configuration
 
-## What this repo is
+## Agents
 
-Alfred is a multi-agent AI team configuration. Each agent owns a domain; skills extend their capabilities. This file tells Claude Code how to behave across the whole workspace.
+31 specialist agents are installed globally at `~/.claude/agents/`. Use them with `/agent <name>` or by describing your task — Claude will suggest the right one.
 
-## Agents & ownership
+Key agents: `cs-ceo-advisor`, `cs-cto-advisor`, `cs-senior-engineer`, `cs-frontend-engineer`, `cs-backend-engineer`, `cs-fullstack-engineer`, `cs-product-manager`, `cs-product-strategist`, `cs-ux-researcher`, `cs-financial-analyst`, `cs-growth-strategist`, `cs-content-creator`, `cs-engineering-lead`, `startup-cto`, `solo-founder` — and more.
 
-| Agent | Department | Owns |
-|-------|------------|------|
-| `eng-product` | Engineering & Product Development | Software engineering, product management, UX/UI design, AI pipelines, dev tooling |
-| `sales-marketing` | Sales & Marketing | Growth marketing, enterprise sales, business development, brand voice, content |
-| `customer-success` | Customer Success & Support | User adoption, SaaS technical support, client retention, onboarding |
-| `ops-finance` | Operations & Finance | Financial reporting, R&D tax incentive compliance, SaaS metrics analysis, data |
-| `people-culture` | People & Culture (HR) | Tech recruitment, workforce retention, employee benefits |
-| `it-infosec` | IT & Information Security | Cloud infrastructure, cybersecurity, system access controls, third-party APIs |
-| `legal-compliance` | Legal & Compliance | Australian Consumer Law (ACL), Privacy Act (1988), GDPR, corporate governance |
+Source: [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) (16.9k stars, MIT)
 
-## Skill install policy
+## Skills
 
-New skills must pass the trust gate before installation:
+718 skills installed globally at `~/.claude/skills/`. Invoke with `/skill-name` or by task context.
 
-1. Public GitHub repo with verifiable source
-2. ≥ 500 stars (waiver requires Alfred approval + documented reason)
-3. Compatible license: MIT / Apache 2.0 / CC BY 4.0 / ELv2
-4. No mandatory paid external API keys
-5. eng-product review → Alfred approval → add to plugin-registry.md
-
-Document every install, reject, and deferral in `.claude/shared/plugin-registry.md`.
-
-## Plugin registry
-
-The source of truth for all installed skills and MCP servers lives at:
-
-```
-.claude/shared/plugin-registry.md
-```
-
-Keep it updated on every change. Include: skill ID, source repo, stars, license, category, agent owner, and any special usage notes.
+Domains: engineering, product, marketing, c-level advisory, compliance, finance, business ops, research, project management, productivity, design, and more.
 
 ## Coding standards
 
@@ -44,10 +20,6 @@ Keep it updated on every change. Include: skill ID, source repo, stars, license,
 - No unnecessary comments — code should be self-documenting
 - No backwards-compatibility shims for removed code
 - Security: no SQL injection, XSS, command injection, or exposed secrets
-
-## MCP servers
-
-Free no-key servers are preferred. Servers requiring credentials need user setup documented in the registry before install.
 
 ## Commit style
 
