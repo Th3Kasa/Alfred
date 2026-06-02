@@ -1,8 +1,8 @@
 # Alfred
 
-Global Claude Code configuration — 718 skills and 31 specialist agents from [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills).
+Global Claude Code configuration — **755 skills** and **50 specialist agents** from two curated sources.
 
-## Agents (31)
+## Agents (50)
 
 Installed to `~/.claude/agents/` — available in every project.
 
@@ -40,10 +40,14 @@ Installed to `~/.claude/agents/` — available in every project.
 | `cs-wiki-librarian` | Knowledge base curation |
 | `cs-wiki-linter` | Knowledge base quality |
 
-## Skills (718)
+## Skills (755)
 
 Installed to `~/.claude/skills/` — available in every project.
 
-Covers: engineering · product · marketing · c-level advisory · compliance · finance · business ops · research · project management · productivity · design
+Covers: engineering · product · marketing · c-level advisory · compliance · finance · business ops · research · project management · productivity · design · orchestration
 
-Source: [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) — 16.9k stars · MIT license
+Sources:
+- [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) — 16.9k stars · MIT · 718 skills + 31 agents
+- [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) — 35.6k stars · MIT · 37 skills + 19 agents (autopilot, ultragoal, ultrawork, deep-dive, architect, debugger, planner, scientist, etc.)
+
+**Rejected:** [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) — 45.5k stars but **CC BY-NC-ND 4.0** license (non-commercial + no-derivatives — outside approved list)

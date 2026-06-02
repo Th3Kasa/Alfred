@@ -2,17 +2,23 @@
 
 ## Agents
 
-31 specialist agents are installed globally at `~/.claude/agents/`. Use them with `/agent <name>` or by describing your task — Claude will suggest the right one.
+50 specialist agents installed globally at `~/.claude/agents/`. Use them with `/agent <name>` or by describing your task.
 
-Key agents: `cs-ceo-advisor`, `cs-cto-advisor`, `cs-senior-engineer`, `cs-frontend-engineer`, `cs-backend-engineer`, `cs-fullstack-engineer`, `cs-product-manager`, `cs-product-strategist`, `cs-ux-researcher`, `cs-financial-analyst`, `cs-growth-strategist`, `cs-content-creator`, `cs-engineering-lead`, `startup-cto`, `solo-founder` — and more.
+Key agents: `cs-ceo-advisor`, `cs-cto-advisor`, `cs-senior-engineer`, `architect`, `debugger`, `planner`, `critic`, `scientist`, `qa-tester`, `security-reviewer`, `cs-product-manager`, `cs-growth-strategist`, `startup-cto`, `solo-founder` — and more.
 
-Source: [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) (16.9k stars, MIT)
+Sources:
+- [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) (16.9k stars, MIT) — 31 agents
+- [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) (35.6k stars, MIT) — 19 agents
 
 ## Skills
 
-718 skills installed globally at `~/.claude/skills/`. Invoke with `/skill-name` or by task context.
+755 skills installed globally at `~/.claude/skills/`. Invoke with `/skill-name` or by task context.
 
-Domains: engineering, product, marketing, c-level advisory, compliance, finance, business ops, research, project management, productivity, design, and more.
+Domains: engineering, product, marketing, c-level advisory, compliance, finance, business ops, research, project management, productivity, design, orchestration, and more.
+
+Sources:
+- [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) — 718 skills
+- [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) — 37 new skills (autopilot, ultragoal, ultrawork, deep-dive, hud, trace, etc.)
 
 ## Coding standards
 
