@@ -50,4 +50,10 @@ Sources:
 - [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) — 16.9k stars · MIT · 718 skills + 31 agents
 - [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) — 35.6k stars · MIT · 37 skills + 19 agents (autopilot, ultragoal, ultrawork, deep-dive, architect, debugger, planner, scientist, etc.)
 
-**Rejected:** [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) — 45.5k stars but **CC BY-NC-ND 4.0** license (non-commercial + no-derivatives — outside approved list)
+## Commands (24)
+
+Installed to `~/.claude/commands/` — available in every project.
+
+`/commit` · `/create-pr` · `/create-prd` · `/pr-review` · `/fix-github-issue` · `/optimize` · `/release` · `/todo` · `/evaluate-repository` · `/context-prime` · `/load-llms-txt` · `/create-prp` · and more.
+
+Source: [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) — 45.5k stars · CC BY-NC-ND 4.0

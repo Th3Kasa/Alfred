@@ -20,6 +20,14 @@ Sources:
 - [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) — 718 skills
 - [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) — 37 new skills (autopilot, ultragoal, ultrawork, deep-dive, hud, trace, etc.)
 
+## Commands
+
+24 slash commands installed globally at `~/.claude/commands/`. Use with `/command-name`.
+
+Key commands: `/commit`, `/create-pr`, `/create-prd`, `/pr-review`, `/fix-github-issue`, `/optimize`, `/release`, `/todo`, `/evaluate-repository`, and more.
+
+Source: [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) (45.5k stars, CC BY-NC-ND 4.0)
+
 ## Coding standards
 
 - Prefer editing existing files over creating new ones
