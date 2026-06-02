@@ -1,107 +1,59 @@
-# Alfred — Your Personal AI Team
+# Alfred
 
-Alfred is a multi-agent AI system built on [Claude Code](https://code.claude.com), configured as a specialized team of AI agents, each owning a distinct domain. Drop this repo into any project and your full team shows up.
+Global Claude Code configuration — **755 skills** and **50 specialist agents** from two curated sources.
 
----
+## Agents (50)
 
-## Team
+Installed to `~/.claude/agents/` — available in every project.
 
-| Agent | Department | Example tasks |
-|-------|------------|---------------|
-| **eng-product** | Engineering & Product Development | Software builds, product roadmap, UX/UI design, AI pipelines, dev tooling, infra planning |
-| **sales-marketing** | Sales & Marketing | Growth campaigns, ads, brand voice, reels scripts, hooks, business development |
-| **customer-success** | Customer Success & Support | User onboarding, SaaS troubleshooting, retention playbooks, adoption workflows |
-| **ops-finance** | Operations & Finance | Financial reporting, R&D tax compliance, SaaS metrics, data charts, Excel |
-| **people-culture** | People & Culture (HR) | Tech recruitment briefs, retention strategies, employee benefits research |
-| **it-infosec** | IT & Information Security | Cloud infrastructure, cybersecurity reviews, system access controls, external APIs |
-| **legal-compliance** | Legal & Compliance | ACL, Privacy Act (1988), GDPR, NDAs, corporate governance |
+| Agent | Role |
+|-------|------|
+| `cs-ceo-advisor` | Strategic leadership, vision, board management |
+| `cs-cto-advisor` | Technical strategy, architecture, engineering org |
+| `cs-senior-engineer` | Architecture, code review, CI/CD, infrastructure |
+| `cs-frontend-engineer` | UI/UX implementation, component systems |
+| `cs-backend-engineer` | APIs, databases, server-side systems |
+| `cs-fullstack-engineer` | Full-stack implementation and delivery |
+| `cs-karpathy-reviewer` | Adversarial code review in Karpathy style |
+| `cs-engineering-lead` | Engineering management and delivery |
+| `cs-product-manager` | Product strategy, roadmap, prioritisation |
+| `cs-product-strategist` | Market positioning, growth strategy |
+| `cs-product-analyst` | Analytics, metrics, experimentation |
+| `cs-agile-product-owner` | Backlog, sprints, agile ceremonies |
+| `cs-ux-researcher` | User research, usability, design systems |
+| `cs-financial-analyst` | Financial modelling, SaaS metrics, forecasting |
+| `cs-growth-strategist` | Growth loops, acquisition, retention |
+| `cs-demand-gen-specialist` | Demand generation, paid channels |
+| `cs-content-creator` | Content strategy and production |
+| `cs-aeo` | Answer engine optimisation |
+| `cs-project-manager` | Project planning and delivery |
+| `cs-quality-regulatory` | Quality management, regulatory compliance |
+| `cs-workspace-admin` | Workspace and tooling administration |
+| `startup-cto` | Early-stage technical leadership |
+| `solo-founder` | Solo founder decision-making and execution |
+| `growth-marketer` | Full-funnel growth marketing |
+| `content-strategist` | Content planning and brand voice |
+| `product-manager` | General product management |
+| `devops-engineer` | DevOps and infrastructure |
+| `finance-lead` | Financial operations and reporting |
+| `cs-wiki-ingestor` | Knowledge base ingestion |
+| `cs-wiki-librarian` | Knowledge base curation |
+| `cs-wiki-linter` | Knowledge base quality |
 
----
+## Skills (755)
 
-## Skills installed
+Installed to `~/.claude/skills/` — available in every project.
 
-398 skills across design, dev, marketing, research, product, and AI.  
-See [`.claude/shared/plugin-registry.md`](.claude/shared/plugin-registry.md) for the full registry with sources, licenses, and approval history.
+Covers: engineering · product · marketing · c-level advisory · compliance · finance · business ops · research · project management · productivity · design · orchestration
 
-**Categories at a glance:**
+Sources:
+- [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) — 16.9k stars · MIT · 718 skills + 31 agents
+- [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) — 35.6k stars · MIT · 37 skills + 19 agents (autopilot, ultragoal, ultrawork, deep-dive, architect, debugger, planner, scientist, etc.)
 
-- **Design** — `frontend-design`, `canvas-design`, `nothing-design`, `color-expert`, `shadcn-ui-mcp`
-- **Marketing** — `marketingskills` (50+ CRO/copy/SEO), `competitive-ads-extractor`, `reels-scripting`, `hook-generator`
-- **Product** — `pm-skills` (65+ PM frameworks), `analyze-feature-requests`, `user-stories`, `prioritization-frameworks`
-- **Research** — `academic-research-skills`, `arxiv`, `youtube-transcript`, `deep-research`
-- **Dev** — `code-refactoring-tech-debt`, `tdd-workflow`, `api-design`, `security-review`
-- **Media** — `pollinations` (free image/audio/text gen), `fal-ai-media`, `video`
+## Commands (24)
 
----
+Installed to `~/.claude/commands/` — available in every project.
 
-## MCP servers
+`/commit` · `/create-pr` · `/create-prd` · `/pr-review` · `/fix-github-issue` · `/optimize` · `/release` · `/todo` · `/evaluate-repository` · `/context-prime` · `/load-llms-txt` · `/create-prp` · and more.
 
-Free, no-API-key servers installed by default:
-
-| Server | Purpose |
-|--------|---------|
-| `duckduckgo` | Web search |
-| `open-websearch` | Multi-engine search (Bing / DDG / Brave / Exa) |
-| `pollinations` | AI image, text & audio generation |
-| `markdownify` | Convert PDF/HTML/files → Markdown |
-| `excalidraw` | Hand-drawn diagrams |
-| `antv-chart` | Data chart generation |
-| `youtube-transcript` | YouTube transcript retrieval |
-| `arxiv` | Academic paper search |
-| `excel-mcp` | Read/write Excel without Microsoft Excel |
-| `shadcn-ui-mcp` | shadcn/ui v4 component generation |
-
----
-
-## Setup
-
-1. **Clone into your project** (or use as a standalone workspace):
-   ```bash
-   git clone https://github.com/Th3Kasa/Alfred.git
-   cd Alfred
-   ```
-
-2. **Open with Claude Code:**
-   ```bash
-   claude
-   ```
-   All agents and skills are automatically available.
-
-3. **Talk to an agent** — just reference it naturally:
-   > "ui-craft, give me a shadcn card component with a dark glass effect"  
-   > "copywriter, write 5 Instagram hooks for a productivity app"  
-   > "tech-curator, vet this skill: github.com/example/some-skill"
-
----
-
-## Skill vetting policy
-
-All skills pass a trust gate before installation:
-
-- Public GitHub repo required
-- Minimum 500 stars (Alfred can grant star-waivers for niche high-quality skills)
-- License must be MIT / Apache 2.0 / CC BY 4.0 / ELv2 or compatible
-- No mandatory paid API keys
-- tech-curator vetting + Alfred approval on every install
-
----
-
-## Repo structure
-
-```
-Alfred/
-├── .agents/
-│   └── skills/          # 398 installed skill definitions
-├── .claude/
-│   └── shared/
-│       └── plugin-registry.md   # Full skill registry & approval log
-├── skills-lock.json     # Pinned skill versions
-├── CLAUDE.md            # Claude Code configuration
-└── README.md
-```
-
----
-
-## License
-
-This configuration is MIT licensed. Individual skills carry their own licenses — see the registry for per-skill attribution requirements (notably `color-expert` requires CC BY 4.0 attribution, and `academic-research-skills` is non-commercial only).
+Source: [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) — 45.5k stars · CC BY-NC-ND 4.0

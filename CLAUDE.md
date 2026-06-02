@@ -1,42 +1,32 @@
 # Alfred — Claude Code Configuration
 
-## What this repo is
+## Agents
 
-Alfred is a multi-agent AI team configuration. Each agent owns a domain; skills extend their capabilities. This file tells Claude Code how to behave across the whole workspace.
+51 specialist agents installed globally at `~/.claude/agents/`. Use them with `/agent <name>` or by describing your task.
 
-## Agents & ownership
+Key agents: `alfred` (co-founder orchestrator), `cs-ceo-advisor`, `cs-cto-advisor`, `cs-senior-engineer`, `architect`, `debugger`, `planner`, `critic`, `scientist`, `qa-tester`, `security-reviewer`, `cs-product-manager`, `cs-growth-strategist`, `startup-cto`, `solo-founder` — and more.
 
-| Agent | Department | Owns |
-|-------|------------|------|
-| `eng-product` | Engineering & Product Development | Software engineering, product management, UX/UI design, AI pipelines, dev tooling |
-| `sales-marketing` | Sales & Marketing | Growth marketing, enterprise sales, business development, brand voice, content |
-| `customer-success` | Customer Success & Support | User adoption, SaaS technical support, client retention, onboarding |
-| `ops-finance` | Operations & Finance | Financial reporting, R&D tax incentive compliance, SaaS metrics analysis, data |
-| `people-culture` | People & Culture (HR) | Tech recruitment, workforce retention, employee benefits |
-| `it-infosec` | IT & Information Security | Cloud infrastructure, cybersecurity, system access controls, third-party APIs |
-| `legal-compliance` | Legal & Compliance | Australian Consumer Law (ACL), Privacy Act (1988), GDPR, corporate governance |
+Sources:
+- [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) (16.9k stars, MIT) — 31 agents
+- [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) (35.6k stars, MIT) — 19 agents
 
-## Skill install policy
+## Skills
 
-New skills must pass the trust gate before installation:
+755 skills installed globally at `~/.claude/skills/`. Invoke with `/skill-name` or by task context.
 
-1. Public GitHub repo with verifiable source
-2. ≥ 500 stars (waiver requires Alfred approval + documented reason)
-3. Compatible license: MIT / Apache 2.0 / CC BY 4.0 / ELv2
-4. No mandatory paid external API keys
-5. eng-product review → Alfred approval → add to plugin-registry.md
+Domains: engineering, product, marketing, c-level advisory, compliance, finance, business ops, research, project management, productivity, design, orchestration, and more.
 
-Document every install, reject, and deferral in `.claude/shared/plugin-registry.md`.
+Sources:
+- [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) — 718 skills
+- [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) — 37 new skills (autopilot, ultragoal, ultrawork, deep-dive, hud, trace, etc.)
 
-## Plugin registry
+## Commands
 
-The source of truth for all installed skills and MCP servers lives at:
+24 slash commands installed globally at `~/.claude/commands/`. Use with `/command-name`.
 
-```
-.claude/shared/plugin-registry.md
-```
+Key commands: `/commit`, `/create-pr`, `/create-prd`, `/pr-review`, `/fix-github-issue`, `/optimize`, `/release`, `/todo`, `/evaluate-repository`, and more.
 
-Keep it updated on every change. Include: skill ID, source repo, stars, license, category, agent owner, and any special usage notes.
+Source: [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) (45.5k stars, CC BY-NC-ND 4.0)
 
 ## Coding standards
 
@@ -44,10 +34,6 @@ Keep it updated on every change. Include: skill ID, source repo, stars, license,
 - No unnecessary comments — code should be self-documenting
 - No backwards-compatibility shims for removed code
 - Security: no SQL injection, XSS, command injection, or exposed secrets
-
-## MCP servers
-
-Free no-key servers are preferred. Servers requiring credentials need user setup documented in the registry before install.
 
 ## Commit style
 
