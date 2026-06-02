@@ -2,9 +2,9 @@
 
 ## Agents
 
-50 specialist agents installed globally at `~/.claude/agents/`. Use them with `/agent <name>` or by describing your task.
+51 specialist agents installed globally at `~/.claude/agents/`. Use them with `/agent <name>` or by describing your task.
 
-Key agents: `cs-ceo-advisor`, `cs-cto-advisor`, `cs-senior-engineer`, `architect`, `debugger`, `planner`, `critic`, `scientist`, `qa-tester`, `security-reviewer`, `cs-product-manager`, `cs-growth-strategist`, `startup-cto`, `solo-founder` — and more.
+Key agents: `alfred` (co-founder orchestrator), `cs-ceo-advisor`, `cs-cto-advisor`, `cs-senior-engineer`, `architect`, `debugger`, `planner`, `critic`, `scientist`, `qa-tester`, `security-reviewer`, `cs-product-manager`, `cs-growth-strategist`, `startup-cto`, `solo-founder` — and more.
 
 Sources:
 - [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) (16.9k stars, MIT) — 31 agents
