@@ -17,10 +17,11 @@ logs/
 .env.local
 .env.*.local
 
-# Node (if any tooling is added)
+# Node
 node_modules/
 npm-debug.log*
 yarn-error.log
+dist/
 
 # Python (for phoenix/arize or other tooling)
 __pycache__/
