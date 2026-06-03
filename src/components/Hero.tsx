@@ -5,7 +5,7 @@ import { WordsPullUp } from './WordsPullUp'
 
 export function Hero() {
   return (
-    <section className="h-screen p-4 md:p-6 bg-black">
+    <section className="h-[100dvh] min-h-[600px] p-3 md:p-6 bg-black overflow-hidden">
       <div className="relative w-full h-full rounded-2xl md:rounded-[2rem] overflow-hidden">
         {/* Background video */}
         <video
@@ -41,8 +41,8 @@ export function Hero() {
           {/* Right content — 4 cols */}
           <div className="col-span-12 lg:col-span-4 flex flex-col items-start gap-4 pb-2">
             <motion.p
-              className="text-primary/70 text-xs sm:text-sm md:text-base"
-              style={{ lineHeight: 1.3 }}
+              className="text-primary/70 text-sm sm:text-sm md:text-base"
+              style={{ lineHeight: 1.4 }}
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}

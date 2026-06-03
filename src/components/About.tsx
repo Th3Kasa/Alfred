@@ -38,8 +38,8 @@ export function About() {
 
         <p
           ref={paragraphRef}
-          className="text-xs sm:text-sm md:text-base max-w-2xl mx-auto"
-          style={{ color: '#DEDBC8', lineHeight: 1.6 }}
+          className="text-sm md:text-base max-w-2xl mx-auto"
+          style={{ color: '#DEDBC8', lineHeight: 1.7 }}
         >
           {chars.map((char, i) => (
             <AnimatedLetter
