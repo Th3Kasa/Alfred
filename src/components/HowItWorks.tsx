@@ -52,7 +52,7 @@ function StepCard({ step, index }: { step: (typeof steps)[0]; index: number }) {
       <h3 className="text-primary text-lg sm:text-xl md:text-2xl font-normal leading-tight">
         <WordsPullUp text={step.title} />
       </h3>
-      <p className="text-gray-500 text-xs sm:text-sm leading-relaxed">{step.body}</p>
+      <p className="text-gray-400 text-sm leading-relaxed">{step.body}</p>
     </motion.div>
   )
 }

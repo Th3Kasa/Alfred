@@ -24,7 +24,7 @@ export function Industries() {
           {doubled.map((name, i) => (
             <span
               key={i}
-              className="inline-flex items-center px-5 py-2 rounded-full border text-primary/60 text-xs shrink-0"
+              className="inline-flex items-center px-5 py-2 rounded-full border text-primary/80 text-xs shrink-0"
               style={{ borderColor: 'rgba(222,219,200,0.12)' }}
             >
               {name}

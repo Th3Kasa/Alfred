@@ -40,7 +40,7 @@ export function Contact() {
         </motion.h2>
 
         <motion.p
-          className="text-gray-500 text-sm leading-relaxed mb-10 max-w-lg mx-auto"
+          className="text-gray-400 text-sm leading-relaxed mb-10 max-w-lg mx-auto"
           initial={{ y: 20, opacity: 0 }}
           animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
           transition={{ delay: 0.2, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
@@ -121,7 +121,7 @@ export function Contact() {
         )}
 
         <motion.p
-          className="text-gray-700 text-[10px] mt-6"
+          className="text-gray-500 text-xs mt-6"
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ delay: 0.5, duration: 0.6 }}

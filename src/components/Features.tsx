@@ -67,7 +67,7 @@ export function Features() {
             containerClassName="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal mb-2"
           />
           <WordsPullUpMultiStyle
-            segments={[{ text: 'Done for you. No technical knowledge needed.', className: 'text-gray-500' }]}
+            segments={[{ text: 'Done for you. No technical knowledge needed.', className: 'text-gray-400' }]}
             containerClassName="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal"
           />
         </div>

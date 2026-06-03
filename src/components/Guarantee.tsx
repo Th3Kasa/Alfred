@@ -44,19 +44,19 @@ export function Guarantee() {
                 <WordsPullUpMultiStyle
                   segments={[
                     { text: 'Measurable results', className: 'text-primary font-normal' },
-                    { text: 'or your next month is free.', className: 'italic font-serif text-primary/60' },
+                    { text: 'or your next month is free.', className: 'italic font-serif text-primary/80' },
                   ]}
                   containerClassName="text-2xl sm:text-3xl md:text-4xl leading-tight"
                 />
               </div>
 
-              <p className="text-gray-500 text-xs sm:text-sm leading-relaxed max-w-md">
+              <p className="text-gray-400 text-sm leading-relaxed max-w-md">
                 If your Google Maps visibility doesn't measurably improve in 60 days — minimum 15-point
                 profile score improvement and 50+ directory listings — your following month is on us.
                 No questions asked. We work until the results are real.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 text-xs text-gray-600">
+              <div className="flex flex-col sm:flex-row gap-4 text-xs text-gray-400">
                 <span>✓ No lock-in beyond 2 months</span>
                 <span>✓ Free audit before you commit</span>
                 <span>✓ Cancel any time after month 2</span>

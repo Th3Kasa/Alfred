@@ -4,7 +4,7 @@ export function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
         <div>
           <p className="text-primary font-medium text-sm mb-1">GrowVera</p>
-          <p className="text-gray-600 text-xs">More local clients. Less guesswork.</p>
+          <p className="text-gray-400 text-xs">More local clients. Less guesswork.</p>
         </div>
 
         <div className="flex flex-col gap-1 text-right">
@@ -14,8 +14,8 @@ export function Footer() {
           >
             admin@growvera.com.au
           </a>
-          <p className="text-gray-700 text-xs">Sydney, Australia · ABN: 50 329 139 726</p>
-          <p className="text-gray-700 text-xs">© 2026 GrowVera · Results may vary</p>
+          <p className="text-gray-400 text-xs">Sydney, Australia · ABN: 50 329 139 726</p>
+          <p className="text-gray-400 text-xs">© 2026 GrowVera · Results may vary</p>
         </div>
       </div>
     </footer>
