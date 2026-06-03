@@ -15,6 +15,8 @@ export function AnimatedLetter({ char, scrollProgress, index, totalChars }: Anim
     [0.2, 1]
   )
   return (
-    <motion.span style={{ opacity }} className="whitespace-pre">{char}</motion.span>
+    <motion.span style={{ opacity }} className="whitespace-pre">
+      {char}
+    </motion.span>
   )
 }

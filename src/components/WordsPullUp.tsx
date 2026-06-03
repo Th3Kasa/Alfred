@@ -11,6 +11,7 @@ export function WordsPullUp({ text, className = '', showAsterisk = false }: Word
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
   const words = text.split(' ')
+
   return (
     <span ref={ref} className={`inline-flex flex-wrap ${className}`}>
       {words.map((word, i) => {
@@ -26,10 +27,15 @@ export function WordsPullUp({ text, className = '', showAsterisk = false }: Word
               <span className="relative inline-block">
                 {word}
                 {isLast && showAsterisk && (
-                  <span className="absolute text-[0.31em]" style={{ top: '0.65em', right: '-0.3em' }}>*</span>
+                  <span
+                    className="absolute text-[0.31em]"
+                    style={{ top: '0.65em', right: '-0.3em' }}
+                  >
+                    *
+                  </span>
                 )}
               </span>
-              {i < words.length - 1 && ' '}
+              {i < words.length - 1 && ' '}
             </motion.span>
           </span>
         )
