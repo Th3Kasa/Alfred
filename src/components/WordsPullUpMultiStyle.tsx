@@ -14,12 +14,15 @@ interface WordsPullUpMultiStyleProps {
 export function WordsPullUpMultiStyle({ segments, containerClassName = '' }: WordsPullUpMultiStyleProps) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
+
   const allWords: { word: string; wordClass: string }[] = []
   segments.forEach((seg) => {
-    seg.text.trim().split(/\s+/).filter(Boolean).forEach((word) => {
+    const words = seg.text.trim().split(/\s+/).filter(Boolean)
+    words.forEach((word) => {
       allWords.push({ word, wordClass: seg.className || '' })
     })
   })
+
   return (
     <div ref={ref} className={`inline-flex flex-wrap justify-center gap-x-[0.3em] gap-y-0 ${containerClassName}`}>
       {allWords.map(({ word, wordClass }, i) => (
