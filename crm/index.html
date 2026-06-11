@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Alfred CRM — Agency Command Center</title>
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --surface: #141414;
+    --surface-2: #1c1c1c;
+    --border: #2a2a2a;
+    --text: #f2f2f0;
+    --text-dim: #9b9b94;
+    --accent: #34d399;
+    --accent-dark: #1A5C3A;
+    --danger: #f87171;
+    --warn: #fbbf24;
+    --radius: 12px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100dvh;
+  }
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 24px; border-bottom: 1px solid var(--border);
+    position: sticky; top: 0; background: rgba(10,10,10,0.92); backdrop-filter: blur(12px); z-index: 50;
+    flex-wrap: wrap; gap: 12px;
+  }
+  .logo { font-size: 20px; font-weight: 700; letter-spacing: 0.04em; }
+  .logo span { color: var(--accent); }
+  nav { display: flex; gap: 4px; flex-wrap: wrap; }
+  nav button {
+    background: none; border: none; color: var(--text-dim); font: inherit; font-size: 14px;
+    padding: 8px 14px; border-radius: 999px; cursor: pointer; transition: all .15s;
+  }
+  nav button:hover { color: var(--text); background: var(--surface-2); }
+  nav button.active { color: #0a0a0a; background: var(--accent); font-weight: 600; }
+  main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 80px; }
+  h2 { font-size: 22px; margin-bottom: 4px; }
+  .sub { color: var(--text-dim); font-size: 14px; margin-bottom: 20px; }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-4 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 18px;
+  }
+  .stat-label { color: var(--text-dim); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
+  .stat-value { font-size: 30px; font-weight: 700; margin-top: 6px; }
+  .stat-value.green { color: var(--accent); }
+  .btn {
+    background: var(--accent); color: #0a0a0a; border: none; font: inherit; font-weight: 600;
+    font-size: 14px; padding: 10px 18px; border-radius: 999px; cursor: pointer; transition: opacity .15s;
+  }
+  .btn:hover { opacity: 0.85; }
+  .btn.ghost { background: var(--surface-2); color: var(--text); border: 1px solid var(--border); }
+  .btn.danger { background: transparent; color: var(--danger); border: 1px solid var(--danger); }
+  .btn.sm { padding: 6px 12px; font-size: 12px; }
+  .toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { text-align: left; color: var(--text-dim); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  td { padding: 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  tr:hover td { background: var(--surface-2); }
+  .table-wrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
+  .pill {
+    display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 600;
+    background: var(--surface-2); border: 1px solid var(--border); white-space: nowrap;
+  }
+  .pill.lead { color: var(--text-dim); }
+  .pill.discovery { color: #93c5fd; border-color: #93c5fd33; }
+  .pill.building { color: var(--warn); border-color: #fbbf2433; }
+  .pill.preview { color: #c4b5fd; border-color: #c4b5fd33; }
+  .pill.revisions { color: #fb923c; border-color: #fb923c33; }
+  .pill.approved { color: var(--accent); border-color: #34d39933; }
+  .pill.retainer { color: #0a0a0a; background: var(--accent); border-color: var(--accent); }
+  .pill.churned { color: var(--danger); border-color: #f8717133; }
+  dialog {
+    background: var(--surface); color: var(--text); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 24px; width: min(520px, 92vw);
+    max-height: 88dvh; overflow-y: auto;
+  }
+  dialog::backdrop { background: rgba(0,0,0,0.7); }
+  dialog h3 { margin-bottom: 16px; }
+  label { display: block; font-size: 12px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.06em; margin: 12px 0 5px; }
+  input, select, textarea {
+    width: 100%; background: var(--bg); border: 1px solid var(--border); color: var(--text);
+    font: inherit; font-size: 14px; padding: 10px 12px; border-radius: 8px;
+  }
+  input:focus, select:focus, textarea:focus { outline: none; border-color: var(--accent); }
+  textarea { resize: vertical; min-height: 70px; }
+  .dialog-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; }
+  .empty { text-align: center; color: var(--text-dim); padding: 48px 16px; }
+  .row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  a.link { color: var(--accent); text-decoration: none; }
+  a.link:hover { text-decoration: underline; }
+  .service-tag { display: inline-block; font-size: 11px; padding: 2px 8px; margin: 2px 2px 0 0; border-radius: 6px; background: var(--accent-dark); color: #d1fae5; }
+  .toolkit-section h4 { margin: 18px 0 8px; color: var(--accent); font-size: 15px; }
+  .toolkit-section p { font-size: 13px; color: var(--text-dim); line-height: 1.7; }
+  .activity-item { display: flex; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .activity-item time { color: var(--text-dim); white-space: nowrap; font-size: 12px; }
+  .danger-zone { border-color: #f8717144; }
+  @media (max-width: 640px) {
+    main { padding: 16px 10px 80px; }
+    td, th { padding: 8px; font-size: 13px; }
+    .stat-value { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">ALFRED<span>CRM</span></div>
+  <nav id="nav"></nav>
+</header>
+
+<main id="main"></main>
+
+<dialog id="modal"></dialog>
+
+<script>
+"use strict";
+
+/* ---------- Data layer ---------- */
+const STORE_KEY = "alfred-crm-v1";
+const STAGES = ["Lead","Discovery","Building","Preview Sent","Revisions","Approved","Retainer Active","Churned"];
+const SERVICES = ["Web Design","Copywriting","SEO + AI Visibility","Branding","Website Build","Automations"];
+const stageClass = s => ({"Lead":"lead","Discovery":"discovery","Building":"building","Preview Sent":"preview","Revisions":"revisions","Approved":"approved","Retainer Active":"retainer","Churned":"churned"}[s] || "lead");
+
+let db = load();
+function load() {
+  try { return JSON.parse(localStorage.getItem(STORE_KEY)) || seed(); }
+  catch { return seed(); }
+}
+function seed() { return { clients: [], projects: [], activity: [] }; }
+function save() { localStorage.setItem(STORE_KEY, JSON.stringify(db)); }
+function uid() { return Date.now().toString(36) + Math.random().toString(36).slice(2,7); }
+function logActivity(text) {
+  db.activity.unshift({ at: new Date().toISOString(), text });
+  db.activity = db.activity.slice(0, 100);
+}
+function money(n) { return "$" + (Number(n)||0).toLocaleString("en-AU"); }
+function esc(s) { const d = document.createElement("div"); d.textContent = s ?? ""; return d.innerHTML; }
+
+/* ---------- Router ---------- */
+const TABS = ["Dashboard","Pipeline","Projects","Toolkit","Settings"];
+let currentTab = "Dashboard";
+function renderNav() {
+  document.getElementById("nav").innerHTML = TABS.map(t =>
+    `<button class="${t===currentTab?'active':''}" onclick="go('${t}')">${t}</button>`).join("");
+}
+function go(tab) { currentTab = tab; render(); }
+
+function render() {
+  renderNav();
+  const m = document.getElementById("main");
+  if (currentTab === "Dashboard") m.innerHTML = viewDashboard();
+  if (currentTab === "Pipeline") m.innerHTML = viewPipeline();
+  if (currentTab === "Projects") m.innerHTML = viewProjects();
+  if (currentTab === "Toolkit") m.innerHTML = viewToolkit();
+  if (currentTab === "Settings") m.innerHTML = viewSettings();
+}
+
+/* ---------- Dashboard ---------- */
+function viewDashboard() {
+  const mrr = db.projects.filter(p => p.status === "Retainer Active").reduce((a,p) => a + (Number(p.retainerFee)||0), 0);
+  const oneOff = db.projects.filter(p => p.oneOffPaid).reduce((a,p) => a + (Number(p.oneOffFee)||0), 0);
+  const activeClients = db.clients.filter(c => c.stage !== "Churned" && c.stage !== "Lead").length;
+  const previews = db.projects.filter(p => p.status === "Preview Sent").length;
+  return `
+    <h2>Dashboard</h2>
+    <p class="sub">Agency command center — ${new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long",year:"numeric"})}</p>
+    <div class="grid cols-4">
+      <div class="card"><div class="stat-label">Monthly Recurring (MRR)</div><div class="stat-value green">${money(mrr)}</div></div>
+      <div class="card"><div class="stat-label">One-off Revenue Collected</div><div class="stat-value">${money(oneOff)}</div></div>
+      <div class="card"><div class="stat-label">Active Clients</div><div class="stat-value">${activeClients}</div></div>
+      <div class="card"><div class="stat-label">Previews Awaiting Approval</div><div class="stat-value">${previews}</div></div>
+    </div>
+    <div class="grid cols-3" style="margin-top:14px">
+      ${STAGES.filter(s=>s!=="Churned").map(s => {
+        const n = db.clients.filter(c => c.stage === s).length;
+        return `<div class="card"><div class="stat-label">${s}</div><div class="stat-value" style="font-size:22px">${n}</div></div>`;
+      }).join("")}
+    </div>
+    <div class="card" style="margin-top:14px">
+      <div class="stat-label" style="margin-bottom:8px">Recent Activity</div>
+      ${db.activity.length ? db.activity.slice(0,12).map(a =>
+        `<div class="activity-item"><time>${new Date(a.at).toLocaleDateString("en-AU")}</time><div>${esc(a.text)}</div></div>`).join("")
+        : `<div class="empty">No activity yet. Add your first client in Pipeline.</div>`}
+    </div>`;
+}
+
+/* ---------- Pipeline (Clients) ---------- */
+function viewPipeline() {
+  return `
+    <div class="toolbar">
+      <div><h2>Pipeline</h2><p class="sub" style="margin:0">Leads → retainers. ${db.clients.length} client${db.clients.length===1?"":"s"} total.</p></div>
+      <button class="btn" onclick="openClientModal()">+ Add Client</button>
+    </div>
+    <div class="table-wrap">
+      ${db.clients.length ? `<table>
+        <thead><tr><th>Client</th><th>Business</th><th>Services</th><th>Stage</th><th>Contact</th><th></th></tr></thead>
+        <tbody>${db.clients.map(c => `
+          <tr>
+            <td><strong>${esc(c.name)}</strong>${c.notes ? `<div style="color:var(--text-dim);font-size:12px;margin-top:3px">${esc(c.notes)}</div>` : ""}</td>
+            <td>${esc(c.business)}</td>
+            <td>${(c.services||[]).map(s => `<span class="service-tag">${esc(s)}</span>`).join("")}</td>
+            <td><span class="pill ${stageClass(c.stage)}">${esc(c.stage)}</span></td>
+            <td style="font-size:13px">${esc(c.email||"")}${c.phone?`<br>${esc(c.phone)}`:""}</td>
+            <td style="white-space:nowrap">
+              <button class="btn ghost sm" onclick="openClientModal('${c.id}')">Edit</button>
+              <button class="btn danger sm" onclick="deleteClient('${c.id}')">✕</button>
+            </td>
+          </tr>`).join("")}
+        </tbody></table>`
+      : `<div class="empty">No clients yet. Click <strong>+ Add Client</strong> to start your pipeline.</div>`}
+    </div>`;
+}
+
+function openClientModal(id) {
+  const c = db.clients.find(x => x.id === id) || { name:"",business:"",email:"",phone:"",stage:"Lead",services:[],notes:"" };
+  const modal = document.getElementById("modal");
+  modal.innerHTML = `
+    <h3>${id ? "Edit Client" : "New Client"}</h3>
+    <label>Contact Name</label><input id="f-name" value="${esc(c.name)}" placeholder="Jane Smith">
+    <label>Business Name</label><input id="f-business" value="${esc(c.business)}" placeholder="Smith's Plumbing">
+    <div class="row-2">
+      <div><label>Email</label><input id="f-email" value="${esc(c.email)}" placeholder="jane@business.com.au"></div>
+      <div><label>Phone</label><input id="f-phone" value="${esc(c.phone)}" placeholder="04xx xxx xxx"></div>
+    </div>
+    <label>Stage</label>
+    <select id="f-stage">${STAGES.map(s => `<option ${s===c.stage?"selected":""}>${s}</option>`).join("")}</select>
+    <label>Services (click to toggle)</label>
+    <div id="f-services">${SERVICES.map(s => {
+      const on = (c.services||[]).includes(s);
+      return `<button type="button" class="btn sm ${on?"":"ghost"}" style="margin:3px" data-svc="${s}" onclick="this.classList.toggle('ghost')">${s}</button>`;
+    }).join("")}</div>
+    <label>Notes</label><textarea id="f-notes" placeholder="Discovery notes, requirements, context…">${esc(c.notes)}</textarea>
+    <div class="dialog-actions">
+      <button class="btn ghost" onclick="document.getElementById('modal').close()">Cancel</button>
+      <button class="btn" onclick="saveClient('${id||""}')">Save</button>
+    </div>`;
+  modal.showModal();
+}
+
+function saveClient(id) {
+  const services = [...document.querySelectorAll("#f-services [data-svc]")].filter(b => !b.classList.contains("ghost")).map(b => b.dataset.svc);
+  const data = {
+    name: document.getElementById("f-name").value.trim(),
+    business: document.getElementById("f-business").value.trim(),
+    email: document.getElementById("f-email").value.trim(),
+    phone: document.getElementById("f-phone").value.trim(),
+    stage: document.getElementById("f-stage").value,
+    services,
+    notes: document.getElementById("f-notes").value.trim(),
+  };
+  if (!data.name && !data.business) { alert("Add at least a name or business."); return; }
+  if (id) {
+    const c = db.clients.find(x => x.id === id);
+    const prevStage = c.stage;
+    Object.assign(c, data);
+    if (prevStage !== data.stage) logActivity(`${data.business||data.name} moved: ${prevStage} → ${data.stage}`);
+  } else {
+    db.clients.push({ id: uid(), createdAt: new Date().toISOString(), ...data });
+    logActivity(`New client added: ${data.business||data.name} (${data.stage})`);
+  }
+  save(); document.getElementById("modal").close(); render();
+}
+
+function deleteClient(id) {
+  const c = db.clients.find(x => x.id === id);
+  if (!confirm(`Delete ${c.business||c.name}? Their projects stay but lose the link.`)) return;
+  db.clients = db.clients.filter(x => x.id !== id);
+  logActivity(`Client deleted: ${c.business||c.name}`);
+  save(); render();
+}
+
+/* ---------- Projects ---------- */
+const PROJECT_STATUSES = ["Scoping","Building","Preview Sent","Revisions","Approved","Retainer Active","Completed","Cancelled"];
+function viewProjects() {
+  return `
+    <div class="toolbar">
+      <div><h2>Projects</h2><p class="sub" style="margin:0">One-off fees + monthly retainers per build.</p></div>
+      <button class="btn" onclick="openProjectModal()">+ Add Project</button>
+    </div>
+    <div class="table-wrap">
+      ${db.projects.length ? `<table>
+        <thead><tr><th>Project</th><th>Client</th><th>Status</th><th>One-off Fee</th><th>Retainer /mo</th><th>Preview URL</th><th></th></tr></thead>
+        <tbody>${db.projects.map(p => {
+          const client = db.clients.find(c => c.id === p.clientId);
+          return `<tr>
+            <td><strong>${esc(p.name)}</strong><div style="color:var(--text-dim);font-size:12px">${esc(p.service||"")}</div></td>
+            <td>${client ? esc(client.business||client.name) : "<span style='color:var(--text-dim)'>—</span>"}</td>
+            <td><span class="pill ${stageClass(p.status)}">${esc(p.status)}</span></td>
+            <td>${money(p.oneOffFee)} ${p.oneOffPaid ? "<span style='color:var(--accent)'>✓ paid</span>" : "<span style='color:var(--text-dim)'>unpaid</span>"}</td>
+            <td>${p.retainerFee ? money(p.retainerFee) : "—"}</td>
+            <td>${p.previewUrl ? `<a class="link" href="${esc(p.previewUrl)}" target="_blank" rel="noopener">preview ↗</a>` : "—"}</td>
+            <td style="white-space:nowrap">
+              <button class="btn ghost sm" onclick="openProjectModal('${p.id}')">Edit</button>
+              <button class="btn danger sm" onclick="deleteProject('${p.id}')">✕</button>
+            </td>
+          </tr>`;}).join("")}
+        </tbody></table>`
+      : `<div class="empty">No projects yet. Add one when a client requests a build.</div>`}
+    </div>`;
+}
+
+function openProjectModal(id) {
+  const p = db.projects.find(x => x.id === id) || { name:"",clientId:"",service:SERVICES[4],status:"Scoping",oneOffFee:"",oneOffPaid:false,retainerFee:"",previewUrl:"",liveUrl:"",notes:"" };
+  const modal = document.getElementById("modal");
+  modal.innerHTML = `
+    <h3>${id ? "Edit Project" : "New Project"}</h3>
+    <label>Project Name</label><input id="p-name" value="${esc(p.name)}" placeholder="Smith's Plumbing — new website">
+    <label>Client</label>
+    <select id="p-client"><option value="">— none —</option>${db.clients.map(c => `<option value="${c.id}" ${c.id===p.clientId?"selected":""}>${esc(c.business||c.name)}</option>`).join("")}</select>
+    <div class="row-2">
+      <div><label>Service</label><select id="p-service">${SERVICES.map(s => `<option ${s===p.service?"selected":""}>${s}</option>`).join("")}</select></div>
+      <div><label>Status</label><select id="p-status">${PROJECT_STATUSES.map(s => `<option ${s===p.status?"selected":""}>${s}</option>`).join("")}</select></div>
+    </div>
+    <div class="row-2">
+      <div><label>One-off Fee (AUD)</label><input id="p-oneoff" type="number" min="0" value="${esc(String(p.oneOffFee))}" placeholder="1500"></div>
+      <div><label>Retainer /month (AUD)</label><input id="p-retainer" type="number" min="0" value="${esc(String(p.retainerFee))}" placeholder="400"></div>
+    </div>
+    <label style="display:flex;align-items:center;gap:8px;text-transform:none;font-size:14px;color:var(--text)">
+      <input type="checkbox" id="p-paid" style="width:auto" ${p.oneOffPaid?"checked":""}> One-off fee received
+    </label>
+    <label>Vercel Preview URL</label><input id="p-preview" value="${esc(p.previewUrl)}" placeholder="https://client-site-xyz.vercel.app">
+    <label>Live URL</label><input id="p-live" value="${esc(p.liveUrl)}" placeholder="https://clientsite.com.au">
+    <label>Notes</label><textarea id="p-notes">${esc(p.notes)}</textarea>
+    <div class="dialog-actions">
+      <button class="btn ghost" onclick="document.getElementById('modal').close()">Cancel</button>
+      <button class="btn" onclick="saveProject('${id||""}')">Save</button>
+    </div>`;
+  modal.showModal();
+}
+
+function saveProject(id) {
+  const data = {
+    name: document.getElementById("p-name").value.trim(),
+    clientId: document.getElementById("p-client").value,
+    service: document.getElementById("p-service").value,
+    status: document.getElementById("p-status").value,
+    oneOffFee: document.getElementById("p-oneoff").value,
+    oneOffPaid: document.getElementById("p-paid").checked,
+    retainerFee: document.getElementById("p-retainer").value,
+    previewUrl: document.getElementById("p-preview").value.trim(),
+    liveUrl: document.getElementById("p-live").value.trim(),
+    notes: document.getElementById("p-notes").value.trim(),
+  };
+  if (!data.name) { alert("Project needs a name."); return; }
+  if (id) {
+    const p = db.projects.find(x => x.id === id);
+    const prevStatus = p.status;
+    Object.assign(p, data);
+    if (prevStatus !== data.status) logActivity(`Project "${data.name}": ${prevStatus} → ${data.status}`);
+  } else {
+    db.projects.push({ id: uid(), createdAt: new Date().toISOString(), ...data });
+    logActivity(`New project: "${data.name}" — one-off ${money(data.oneOffFee)}${data.retainerFee ? ", retainer " + money(data.retainerFee) + "/mo" : ""}`);
+  }
+  save(); document.getElementById("modal").close(); render();
+}
+
+function deleteProject(id) {
+  const p = db.projects.find(x => x.id === id);
+  if (!confirm(`Delete project "${p.name}"?`)) return;
+  db.projects = db.projects.filter(x => x.id !== id);
+  logActivity(`Project deleted: "${p.name}"`);
+  save(); render();
+}
+
+/* ---------- Toolkit ---------- */
+function viewToolkit() {
+  const map = [
+    ["Web Design (UI/UX)", "designer · cs-frontend-engineer · cs-ux-researcher", "frontend-design, frontend-design-direction, ui-design-system, design-system, color-expert, make-interfaces-feel-better, a11y-audit, apple-hig-expert, motion-ui, gsap-*"],
+    ["Copywriting", "cs-content-creator · content-strategist · writer", "copywriting, copy-editing, brand-voice, content-humanizer, hook-generator, emails, cold-email, email-sequence, grammar-check"],
+    ["SEO + AI Visibility", "cs-aeo · cs-growth-strategist", "seo, seo-audit, ai-seo, aeo, programmatic-seo, schema-markup, site-architecture, directory-submissions"],
+    ["Branding", "designer · cs-product-strategist", "brand-guidelines, brand-voice, product-name, positioning-ideas, value-proposition, color-expert, youtube-thumbnail"],
+    ["Website Builds", "cs-fullstack-engineer · cs-senior-engineer · qa-tester", "nextjs-turbopack, react-patterns, vite-patterns, frontend-patterns, landing-page-generator, deployment-patterns, e2e-testing, browser-qa, full-page-screenshot"],
+    ["Automations (new)", "cs-workspace-admin · devops-engineer · executor", "workflow-builder, api-connector-builder, autonomous-loops, mcp-server-builder, google-workspace-ops, email-ops, sms, ci-cd-pipeline-builder"],
+    ["Self-Improvement Loop", "critic · verifier · planner", "self-improve, learner, reflect, retro, post-mortem, continuous-learning, self-eval, remember"],
+  ];
+  return `
+    <h2>Toolkit</h2>
+    <p class="sub">51 agents · 757+ skills mapped to your service lines. Invoke any of these by name in a Claude Code session.</p>
+    <div class="grid">
+      ${map.map(([svc, agents, skills]) => `
+        <div class="card toolkit-section">
+          <h4>${svc}</h4>
+          <p><strong style="color:var(--text)">Agents:</strong> ${agents}</p>
+          <p><strong style="color:var(--text)">Key skills:</strong> ${skills}</p>
+        </div>`).join("")}
+    </div>
+    <div class="card" style="margin-top:14px">
+      <h4 style="color:var(--accent);margin-bottom:8px">Delivery Workflow</h4>
+      <p style="font-size:14px;line-height:1.9;color:var(--text-dim)">
+        1. Client request → add to <strong style="color:var(--text)">Pipeline</strong> as Lead<br>
+        2. Discovery call → capture notes, select services → stage: Discovery<br>
+        3. Alfred builds (agents + skills above) → stage: Building<br>
+        4. Deploy to Vercel → paste preview URL into the <strong style="color:var(--text)">Project</strong> → stage: Preview Sent<br>
+        5. Client feedback → Revisions (repeat 3–4)<br>
+        6. Client happy → stage: Approved → send one-off invoice + retainer agreement (see <code>agency/contracts/</code>)<br>
+        7. Signed + paid → stage: Retainer Active → MRR counts on Dashboard
+      </p>
+    </div>`;
+}
+
+/* ---------- Settings ---------- */
+function viewSettings() {
+  const size = new Blob([localStorage.getItem(STORE_KEY)||""]).size;
+  return `
+    <h2>Settings</h2>
+    <p class="sub">Data lives in this browser's localStorage (${(size/1024).toFixed(1)} KB). Export regularly as backup.</p>
+    <div class="grid cols-3">
+      <div class="card">
+        <div class="stat-label" style="margin-bottom:10px">Backup</div>
+        <button class="btn" onclick="exportData()">Export JSON</button>
+      </div>
+      <div class="card">
+        <div class="stat-label" style="margin-bottom:10px">Restore</div>
+        <input type="file" id="import-file" accept=".json" style="margin-bottom:10px">
+        <button class="btn ghost" onclick="importData()">Import JSON</button>
+      </div>
+      <div class="card danger-zone">
+        <div class="stat-label" style="margin-bottom:10px">Danger Zone</div>
+        <button class="btn danger" onclick="wipeData()">Wipe All Data</button>
+      </div>
+    </div>`;
+}
+function exportData() {
+  const blob = new Blob([JSON.stringify(db, null, 2)], { type: "application/json" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `alfred-crm-backup-${new Date().toISOString().slice(0,10)}.json`;
+  a.click();
+}
+function importData() {
+  const f = document.getElementById("import-file").files[0];
+  if (!f) { alert("Choose a JSON file first."); return; }
+  const r = new FileReader();
+  r.onload = () => {
+    try {
+      const data = JSON.parse(r.result);
+      if (!data.clients || !data.projects) throw new Error("Not a valid Alfred CRM backup.");
+      db = data; save(); render(); alert("Imported successfully.");
+    } catch (e) { alert("Import failed: " + e.message); }
+  };
+  r.readAsText(f);
+}
+function wipeData() {
+  if (!confirm("Wipe ALL clients, projects, and activity? This cannot be undone.")) return;
+  if (!confirm("Are you absolutely sure? Export a backup first if in doubt.")) return;
+  db = seed(); save(); render();
+}
+
+render();
+</script>
+</body>
+</html>
